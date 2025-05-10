@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8a4f8a69d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-top">
+      <div class="container">
+        <div class="call-section">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-phone"></i
+            ><a href="tel:+40767345678">+40 767 345 678</a>
+          </a>
+        </div>
+        <span class="navbar-text">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </span>
+      </div>
+    </nav>
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo-img" href="index.html">
+          <img src="assets/img/Logo.png" width="100" />
+        </a>
+
+        <!-- Mobile cart icon and toggle button -->
+        <div class="d-flex d-lg-none align-items-center ms-auto">
+          <a href="#" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="navbar-toggler" type="button" id="openSidebar">
+            <i class="fa-solid fa-bars toggle-bars"></i>
+          </button>
+        </div>
+
+        <!-- Desktop navbar -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav active-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-links-sec" href="index.html"
+                >Acasa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="about-us.html"
+                >Despre noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="menus.html">Meniu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="location.html"
+                >Locatie</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="catering.html"
+                >Catering</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="contact.html"
+                >Contact</a
+              >
+            </li>
+
+            <li class="nav-item btn-section">
+              <a href="my-account.html"
+                ><button class="btn form-btns" type="button">
+                  <img
+                    src="assets/img/lets-icons_user-fill.svg"
+                    alt=""
+                    class="img-fluid"
+                  />My Account
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop cart & buttons -->
+        <div class="d-none d-lg-flex align-items-center">
+          <a href="menu-cart.html" class="me-3"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="my-account.html"
+            ><button class="btn form-btns" type="button">
+              <img
+                src="assets/img/lets-icons_user-fill.svg"
+                alt=""
+                class="img-fluid"
+              />My Account
+            </button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div>
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <ul class="sidebar-menu">
+          <a href="index.html"
+            ><li class="active"><i class="fas fa-home"></i> Acasa</li></a
+          >
+          <a href="about-us.html"
+            ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+          >
+          <a href="menus.html"
+            ><li><i class="fas fa-utensils"></i> Meniu</li></a
+          >
+          <a href="location.html"
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
+          >
+          <a href="catering.html"
+            ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
+          >
+          <a href="track-order.html"
+            ><li><i class="fas fa-truck"></i> urmărirea comenzii</li></a
+          >
+
+          <a href="contact.html"
+            ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+          >
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <a href="my-account.html"
+          ><button class="btn form-btns" type="button">
+            <img
+              src="assets/img/lets-icons_user-fill.svg"
+              alt=""
+              class="img-fluid"
+            />My Account
+          </button></a
+        >
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

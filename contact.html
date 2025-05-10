@@ -16,7 +16,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
     <title>Sorridi Pizza</title>
   </head>
   <body>
@@ -70,7 +74,7 @@
               <a class="nav-link navbar-links-sec" href="menus.html">Meniu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active navbar-links-sec" href="location.html"
+              <a class="nav-link navbar-links-sec" href="location.html"
                 >Locatie</a
               >
             </li>
@@ -85,7 +89,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-links-sec" href="contact.html"
+              <a class="nav-link active navbar-links-sec" href="contact.html"
                 >Contact</a
               >
             </li>
@@ -139,9 +143,7 @@
             ><li><i class="fas fa-utensils"></i> Meniu</li></a
           >
           <a href="location.html"
-            ><li class="active">
-              <i class="fas fa-map-marker-alt"></i> Locatie
-            </li></a
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
           >
           <a href="catering.html"
             ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
@@ -151,7 +153,7 @@
           >
 
           <a href="contact.html"
-            ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+            ><li class="active"><i class="fas fa-phone-alt"></i> Contact</li></a
           >
         </ul>
       </div>
@@ -167,121 +169,143 @@
     <!-- BACKGROUND -->
     <div class="container-fluid p-0">
       <div class="bg-green">
-        <h1>Locatie</h1>
+        <h1>Contact</h1>
       </div>
     </div>
-    <div class="container location_wrapper">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h1 class="section-title text-center pt-5 mb-0">
-            Vezi unde ne găsești în orașul tău
-          </h1>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="map-pin mt-4">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54308.75115445732!2d73.99679684521692!3d31.70778250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1746249040022!5m2!1sen!2s"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+        <!-- Left Column: Contact Form -->
+        <div class="col-lg-7 col-md-12">
+          <div class="pc-form">
+            <form action="">
+              <!-- Full name -->
+              <div class="send-form">
+                <label for="your-name" class="form-label data-name"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control enter-here"
+                  id="your-name"
+                  name="your-name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <!-- MOBILE NUMBER -->
+              <div class="send-form">
+                <label for="mobileNumber" class="form-label data-name"
+                  >Mobile Number</label
+                >
+                <input
+                  id="phone"
+                  type="tel"
+                  class="enter-here"
+                  placeholder="123 456 780"
+                  required
+                />
+              </div>
+              <!-- Email -->
+              <div class="send-form">
+                <label for="your-email" class="form-label data-name"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control enter-here"
+                  id="your-email"
+                  name="your-email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <!-- Messaage -->
+              <div class="send-form">
+                <label for="your-message" class="form-label data-name"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control your-mess"
+                  id="your-message"
+                  name="your-message"
+                  placeholder="Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <!-- Send button -->
+              <div class="send-now">
+                <a href="#"><button class="data-send">Send Now</button></a>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="col-md-6">
+        <!-- Right Column: Contact Info + Image -->
+        <div class="col-lg-5">
+          <div class="contact-dat">
+            <!-- Contact 1 -->
+            <div class="info-dat">
+              <i class="fa-solid fa-phone"></i>
+              <div class="con-name">Telefonx</div>
+              <a href="20849503202084950320" class="phone-no"
+                >(208) 495–0320 | (208) 495–0320</a
+              >
+            </div>
+            <!-- contact 2 -->
+            <div class="info-dat">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="con-name">Locatie</div>
+              <p class="phone-no mb-0">
+                Biserica SDA Parma, 1 E. McConnell Ave. Parma, ID 83660
+              </p>
+            </div>
+            <!-- contact 3 -->
+            <div class="info-dat no-dat">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="con-name">Email</div>
+              <a href="mailto:contact@sorridipizza.ro" class="phone-no"
+                >contact@sorridipizza.ro</a
+              >
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Piata Gemeni</h2>
-                </div>
-                <div class="card-wrapper">
-                  <div class="card-content pt-3">
-                    <img
-                      src="assets/img/map-pin.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p>Strada Vasile Lascăr 140</p>
-                  </div>
-                  <div class="card-content">
-                    <img
-                      src="assets/img/phone-call.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p>+40 767 345 678</p>
-                  </div>
-                  <div class="card-content">
-                    <img src="assets/img/at-sign.svg" alt="" />
-                    <p>contact@sorridipizza1.com</p>
-                  </div>
-                  <div class="btn text-center mx-auto">
-                    <span class="btn-text">Get Directions</span>
-                    <span class="btn-arrow"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 2</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 3</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 4</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
+            <div class="col-md-12">
+              <div class="pizza-img"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="mt-5 footer-section">
+    <footer class="mt-auto footer-section">
       <div class="container text-center">
         <p>© 2025 Sorridi Pizza. Toate drepturile rezervate.</p>
       </div>
     </footer>
+    <!-- Footer -->
     <script src="assets/js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Country codes //
+      const input = document.querySelector("#phone");
+      const iti = window.intlTelInput(input, {
+        nationalMode: false,
+        onlyCountries: [], // Leave empty to show all countries
+        showFlags: true,
+        separateDialCode: true,
+        customPlaceholder: function (
+          selectedCountryPlaceholder,
+          selectedCountryData
+        ) {
+          return selectedCountryData.dialCode;
+        },
+        utilsScript:
+          "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+      });
+    </script>
   </body>
 </html>

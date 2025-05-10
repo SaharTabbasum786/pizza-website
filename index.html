@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8a4f8a69d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <!-- Background image -->
+    <div class="curve-bg-img"></div>
+
+    <!-- Top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-top">
+      <div class="container">
+        <div class="call-section">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+40767345678">+40 767 345 678</a>
+          </a>
+        </div>
+        <span class="navbar-text">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </span>
+      </div>
+    </nav>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo-img" href="index.html">
+          <img src="assets/img/Logo.png" width="100" />
+        </a>
+
+        <!-- Mobile cart icon and toggle button -->
+        <div class="d-flex d-lg-none align-items-center ms-auto">
+          <a href="menu-cart.html" class="me-3"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <button class="navbar-toggler" type="button" id="openSidebar">
+            <i class="fa-solid fa-bars toggle-bars"></i>
+          </button>
+        </div>
+
+        <!-- Desktop navbar -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav active-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-links-sec" href="index.html"
+                >Acasa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="about-us.html"
+                >Despre noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="menus.html">Meniu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="location.html"
+                >Locatie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="catering.html"
+                >Catering</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="track-order.html"
+                >urmărirea comenzii</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="create-account.html"
+                ><button class="btn form-btns reg-btn">Register</button></a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="authentication.html"
+                ><button class="btn form-btns log-btn">Login</button></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop cart & buttons -->
+        <div class="d-none d-lg-flex align-items-center">
+          <a href="menu-cart.html" class="me-3"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="create-account.html"
+            ><button class="btn form-btns reg-btn" type="button">
+              Register
+            </button></a
+          >
+          <a href="authentication.html"
+            ><button class="btn form-btns" type="button">Login</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div>
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <ul class="sidebar-menu">
+          <a href="index.html"
+            ><li class="active"><i class="fas fa-home"></i> Acasa</li></a
+          >
+          <a href="about-us.html"
+            ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+          >
+          <a href="menus.html"
+            ><li><i class="fas fa-utensils"></i> Meniu</li></a
+          >
+          <a href="location.html"
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
+          >
+          <a href="catering.html"
+            ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
+          >
+          <a href="track-order.html"
+            ><li><i class="fas fa-truck"></i> urmărirea comenzii</li></a
+          >
+
+          <a href="contact.html"
+            ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+          >
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <a href="authentication.html"
+          ><button class="btn login-red-btn">Login</button></a
+        >
+        <a href="create-account.html"
+          ><button class="btn reg-green-btn">Register</button></a
+        >
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container hero-content">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Sorridi Pizza – Gustul Care Aduce Zâmbete!</h1>
+          <p>
+            Savurează fiecare mușcătură cu Sorridi Pizza – gust autentic,
+            ingrediente de calitate și bucurie în fiecare felie!
+          </p>
+          <div class="hero-btn-sec">
+            <button class="btn btn-red rounded-pill">Cumpără acum!</button>
+            <button class="btn btn-green rounded-pill">Vezi mai multe!</button>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex align-items-center rate-section">
+                <div class="d-flex">
+                  <img
+                    src="assets/img/hero-profile-img (1).png"
+                    alt="Users"
+                    class="rating-icon"
+                  />
+                  <img
+                    src="assets/img/hero-profile-img (2).png"
+                    alt="Users"
+                    class="rating-icon rating-img"
+                  />
+                  <img
+                    src="assets/img/hero-profile-img (3).png"
+                    alt="Users"
+                    class="rating-icon rating-img"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <p class="rating-range">
+                    189K+ <span> iubitori de gust!</span>
+                  </p>
+                  <p class="d-flex align-items-center pb-0 rating-range">
+                    <i class="fa-solid fa-star"></i>&nbsp;<span>4.9</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="./assets/img/hero-pizza-img.png"
+            alt="Pizza"
+            class="hero-img"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- menue section start -->
+    <div class="menu-bar">
+      <div class="container">
+        <div class="swiper menu-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/pizza.png" alt="" />Pizza
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/antipasta.png" alt="" />Antipasto
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/paste.png" alt="" />Paste
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/panini.png" alt="" />Panini
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/box.png" alt="" />Box
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/salate.png" alt="" />Salate
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/dasert.png" alt="" />Dessert
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/bauturi.png" alt="" />Bauturi
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- menu section ended -->
+
+    <!-- pizza card section start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="options pizza-sec">
+            <h1>Alege și Bucură-te</h1>
+            <p>
+              Reduceri exclusive la produsele tale preferate, disponibile doar
+              astăzi!
+            </p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-milano.png"
+                  class="card-img-top"
+                  alt="pizza"
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">Pizza Milano</h5>
+                  <p class="card-text">
+                    Mozzarella fior di latte 40 gr,mozzarella di bufala 35 gr,
+                    sos rosii 60 gr , grana padano 15 gr, salam picant 50 gr,
+                    busuioc 4 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-detail.html" class="btn pizza-btn"
+                    >Cumpără acum!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-parma.png"
+                  class="card-img-top"
+                  alt="pizza"
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">Pizza Parma</h5>
+                  <p class="card-text">
+                    Mozzarella fior di latte 80 gr, prosciutto crudo 50 gr,
+                    rosii cherry 30 gr, sos rosii 60 gr , rucola 15 gr, grana
+                    padano 10 gr, crema trufe 10 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-detail.html" class="btn pizza-btn"
+                    >Cumpără acum!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-torino.png"
+                  class="card-img-top"
+                  alt="pizza"
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">Pizza Torino</h5>
+                  <p class="card-text">
+                    Mozzarella fior di latte 80 gr, sos rosii 60 gr , salsicia
+                    50 gr, cartofi 30 gr, fiarieli 10 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span class="pizza-torino">42.00 Lei</span>
+                  <a href="pizza-detail.html" class="btn pizza-btn"
+                    >Cumpără acum!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-padova.png"
+                  class="card-img-top"
+                  alt="pizza"
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">Pizza Padova</h5>
+                  <p class="card-text">
+                    Mozzarella fior di latte 80 gr , taleggio 15 gr, pancetta 50
+                    gr, busuioc 4gr , piper, grana padano 15 grn, gran cucina 15
+                    gr , ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-detail.html" class="btn pizza-btn"
+                    >Cumpără acum!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pizza card section ended -->
+    <!-- gust slider section start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="options">
+            <h1>Ce Spun Oamenii Despre Gust</h1>
+            <p>
+              Descoperă părerile clienților noștri despre savoarea și calitatea
+              produselor noastre!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme">
+            <!-- Testimonial 1 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <h5>Bufalina S.T.G</h5>
+                <div class="star-sec">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p>
+                  Desertul ideal pentru iubitorii de cafea! Crema este fină, iar
+                  biscuiții se topesc în gură. O porție îmbelșugată care merită
+                  fiecare leu!
+                </p>
+                <p class="card-last-sec">Maria I.</p>
+                <div class="quote-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.5 12.5C23.8261 12.5 25.0978 13.0268 26.0355 13.9645C26.9732 14.9021 27.5 16.1739 27.5 17.5V32.5C27.5 40.325 23.375 45.4825 15.6075 47.425C15.2882 47.5074 14.9557 47.5259 14.6292 47.4792C14.3027 47.4326 13.9886 47.3218 13.7051 47.1533C13.4217 46.9847 13.1743 46.7618 12.9774 46.4972C12.7804 46.2327 12.6378 45.9318 12.5576 45.6119C12.4775 45.2919 12.4614 44.9593 12.5104 44.6332C12.5594 44.307 12.6724 43.9938 12.8429 43.7115C13.0135 43.4292 13.2382 43.1835 13.5042 42.9884C13.7701 42.7934 14.072 42.6529 14.3925 42.575C19.96 41.1825 22.5 38.0075 22.5 32.5V30H15C13.7386 30.0004 12.5236 29.524 11.5986 28.6663C10.6737 27.8085 10.1071 26.6329 10.0125 25.375L10 25V17.5C10 16.1739 10.5268 14.9021 11.4645 13.9645C12.4021 13.0268 13.6739 12.5 15 12.5H22.5ZM45 12.5C46.3261 12.5 47.5978 13.0268 48.5355 13.9645C49.4732 14.9021 50 16.1739 50 17.5V32.5C50 40.325 45.875 45.4825 38.1075 47.425C37.7882 47.5074 37.4557 47.5259 37.1292 47.4792C36.8027 47.4326 36.4886 47.3218 36.2051 47.1533C35.9216 46.9847 35.6743 46.7618 35.4774 46.4972C35.2804 46.2327 35.1378 45.9318 35.0576 45.6119C34.9775 45.2919 34.9614 44.9593 35.0104 44.6332C35.0594 44.307 35.1724 43.9938 35.3429 43.7115C35.5135 43.4292 35.7382 43.1835 36.0042 42.9884C36.2701 42.7934 36.572 42.6529 36.8925 42.575C42.46 41.1825 45 38.0075 45 32.5V30H37.5C36.2386 30.0004 35.0236 29.524 34.0986 28.6663C33.1737 27.8085 32.6071 26.6329 32.5125 25.375L32.5 25V17.5C32.5 16.1739 33.0268 14.9021 33.9645 13.9645C34.9021 13.0268 36.1739 12.5 37.5 12.5H45Z"
+                      fill="#36BB17"
+                      fill-opacity="0.28"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <h5>Pasta Verde</h5>
+                <div class="star-sec">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="card-desc">
+                  O combinație perfectă de texturi și gusturi! Sosul este
+                  delicios, iar pastele sunt al dente.
+                </p>
+                <p class="card-last-sec">Alex R.</p>
+                <div class="quote-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.5 12.5C23.8261 12.5 25.0978 13.0268 26.0355 13.9645C26.9732 14.9021 27.5 16.1739 27.5 17.5V32.5C27.5 40.325 23.375 45.4825 15.6075 47.425C15.2882 47.5074 14.9557 47.5259 14.6292 47.4792C14.3027 47.4326 13.9886 47.3218 13.7051 47.1533C13.4217 46.9847 13.1743 46.7618 12.9774 46.4972C12.7804 46.2327 12.6378 45.9318 12.5576 45.6119C12.4775 45.2919 12.4614 44.9593 12.5104 44.6332C12.5594 44.307 12.6724 43.9938 12.8429 43.7115C13.0135 43.4292 13.2382 43.1835 13.5042 42.9884C13.7701 42.7934 14.072 42.6529 14.3925 42.575C19.96 41.1825 22.5 38.0075 22.5 32.5V30H15C13.7386 30.0004 12.5236 29.524 11.5986 28.6663C10.6737 27.8085 10.1071 26.6329 10.0125 25.375L10 25V17.5C10 16.1739 10.5268 14.9021 11.4645 13.9645C12.4021 13.0268 13.6739 12.5 15 12.5H22.5ZM45 12.5C46.3261 12.5 47.5978 13.0268 48.5355 13.9645C49.4732 14.9021 50 16.1739 50 17.5V32.5C50 40.325 45.875 45.4825 38.1075 47.425C37.7882 47.5074 37.4557 47.5259 37.1292 47.4792C36.8027 47.4326 36.4886 47.3218 36.2051 47.1533C35.9216 46.9847 35.6743 46.7618 35.4774 46.4972C35.2804 46.2327 35.1378 45.9318 35.0576 45.6119C34.9775 45.2919 34.9614 44.9593 35.0104 44.6332C35.0594 44.307 35.1724 43.9938 35.3429 43.7115C35.5135 43.4292 35.7382 43.1835 36.0042 42.9884C36.2701 42.7934 36.572 42.6529 36.8925 42.575C42.46 41.1825 45 38.0075 45 32.5V30H37.5C36.2386 30.0004 35.0236 29.524 34.0986 28.6663C33.1737 27.8085 32.6071 26.6329 32.5125 25.375L32.5 25V17.5C32.5 16.1739 33.0268 14.9021 33.9645 13.9645C34.9021 13.0268 36.1739 12.5 37.5 12.5H45Z"
+                      fill="#36BB17"
+                      fill-opacity="0.28"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="item">
+              <div class="testimonial-card">
+                <h5>Tiramisu Classic</h5>
+                <div class="star-sec">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="card-desc">
+                  Desertul ideal pentru iubitorii de cafea! Crema este fină, iar
+                  biscuiții se topesc în gură.
+                </p>
+                <p class="card-last-sec">Ioana P.</p>
+                <div class="quote-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                  >
+                    <path
+                      d="M22.5 12.5C23.8261 12.5 25.0978 13.0268 26.0355 13.9645C26.9732 14.9021 27.5 16.1739 27.5 17.5V32.5C27.5 40.325 23.375 45.4825 15.6075 47.425C15.2882 47.5074 14.9557 47.5259 14.6292 47.4792C14.3027 47.4326 13.9886 47.3218 13.7051 47.1533C13.4217 46.9847 13.1743 46.7618 12.9774 46.4972C12.7804 46.2327 12.6378 45.9318 12.5576 45.6119C12.4775 45.2919 12.4614 44.9593 12.5104 44.6332C12.5594 44.307 12.6724 43.9938 12.8429 43.7115C13.0135 43.4292 13.2382 43.1835 13.5042 42.9884C13.7701 42.7934 14.072 42.6529 14.3925 42.575C19.96 41.1825 22.5 38.0075 22.5 32.5V30H15C13.7386 30.0004 12.5236 29.524 11.5986 28.6663C10.6737 27.8085 10.1071 26.6329 10.0125 25.375L10 25V17.5C10 16.1739 10.5268 14.9021 11.4645 13.9645C12.4021 13.0268 13.6739 12.5 15 12.5H22.5ZM45 12.5C46.3261 12.5 47.5978 13.0268 48.5355 13.9645C49.4732 14.9021 50 16.1739 50 17.5V32.5C50 40.325 45.875 45.4825 38.1075 47.425C37.7882 47.5074 37.4557 47.5259 37.1292 47.4792C36.8027 47.4326 36.4886 47.3218 36.2051 47.1533C35.9216 46.9847 35.6743 46.7618 35.4774 46.4972C35.2804 46.2327 35.1378 45.9318 35.0576 45.6119C34.9775 45.2919 34.9614 44.9593 35.0104 44.6332C35.0594 44.307 35.1724 43.9938 35.3429 43.7115C35.5135 43.4292 35.7382 43.1835 36.0042 42.9884C36.2701 42.7934 36.572 42.6529 36.8925 42.575C42.46 41.1825 45 38.0075 45 32.5V30H37.5C36.2386 30.0004 35.0236 29.524 34.0986 28.6663C33.1737 27.8085 32.6071 26.6329 32.5125 25.375L32.5 25V17.5C32.5 16.1739 33.0268 14.9021 33.9645 13.9645C34.9021 13.0268 36.1739 12.5 37.5 12.5H45Z"
+                      fill="#36BB17"
+                      fill-opacity="0.28"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- You can add more .item blocks if needed -->
+          </div>
+
+          <!-- Arrow Controls -->
+          <div class="arrow-controls">
+            <button class="custom-prev">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="custom-next">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- guest slider section ended -->
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container text-center">
+        <p>© 2025 Sorridi Pizza. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

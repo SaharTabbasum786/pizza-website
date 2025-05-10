@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8a4f8a69d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+         <!-- Top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-top">
+      <div class="container">
+        <div class="call-section">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+40767345678">+40 767 345 678</a>
+          </a>
+        </div>
+        <span class="navbar-text">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </span>
+      </div>
+    </nav>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo-img" href="index.html">
+          <img src="assets/img/Logo.png" width="100" />
+        </a>
+
+        <!-- Mobile cart icon and toggle button -->
+        <div class="d-flex d-lg-none align-items-center ms-auto">
+          <a href="menu-cart.html" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+          <button class="navbar-toggler" type="button" id="openSidebar">
+            <i class="fa-solid fa-bars toggle-bars"></i>
+          </button>
+        </div>
+
+        <!-- Desktop navbar -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav active-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-links-sec" href="index.html"
+                >Acasa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="about.html"
+                >Despre noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="services.html"
+                >Meniu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="FAQ'S.html">Locatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="contact.htm"
+                >Catering</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="track-order.html"
+                >urmărirea comenzii</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="contact.htm"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="create-account.html"
+                ><button class="btn form-btns reg-btn">Register</button></a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="authentication.html"
+                ><button class="btn form-btns log-btn">Login</button></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop cart & buttons -->
+        <div class="d-none d-lg-flex align-items-center">
+          <a href="#" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="create-account.html"
+            ><button class="btn form-btns reg-btn" type="button">
+              Register
+            </button></a
+          >
+          <a href="authentication.html"
+            ><button class="btn form-btns" type="button">Login</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div>
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <ul class="sidebar-menu">
+          <a href="#"
+            ><li class="active"><i class="fas fa-home"></i> Acasa</li></a
+          >
+          <a href="#"
+            ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+          >
+          <a href="#"
+            ><li><i class="fas fa-utensils"></i> Meniu</li></a
+          >
+          <a href="#"
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
+          >
+          <a href="track-order.html"
+            ><li><i class="fas fa-truck"></i> urmărirea comenzii</li></a
+          >
+
+          <a href="#"
+            ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+          >
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <a href="authentication.html"
+          ><button class="btn login-red-btn">Login</button></a
+        >
+        <a href="create-account.html"
+          ><button class="btn reg-green-btn">Register</button></a
+        >
+      </div>
+    </div>
+    <!-- BACKGROUND -->
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bg-green">
+            <h1>Gestionează profilul</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar menue section -->
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Mobile/Tablet Dropdown -->
+        <div class="col-12 d-lg-none tabs-dropdown-section">
+          <div class="custom-dropdown" id="dropdown-toggle">
+            <div class="d-flex align-items-center">
+              <div class="d-flex">
+                <i class="fas fa-user"></i>&nbsp;&nbsp; Informații personale
+              </div>
+            </div>
+          </div>
+          <div class="custom-options" id="dropdown-options">
+            <div class="option active" data-target="#panel1v">
+              <div class="d-flex">
+                <i class="fas fa-user"></i> &nbsp; Informații personale
+              </div>
+            </div>
+            <div class="option" data-target="#panel2v">
+              <div class="d-flex">
+                <i class="fas fa-star"></i> &nbsp; Sorridi Points
+              </div>
+            </div>
+            <div class="option" data-target="#panel3v">
+              <div class="d-flex">
+                <i class="fas fa-ticket-alt"></i> &nbsp; Vouchers
+              </div>
+            </div>
+            <div class="option" data-target="#panel4v">
+              <div class="d-flex">
+                <i class="fas fa-history"></i> &nbsp; Istoric comenzi
+              </div>
+            </div>
+            <div class="option" data-target="#panel5v">
+              <div class="d-flex">
+                <i class="fas fa-map-marker-alt"></i> &nbsp; Detalii livrare
+              </div>
+            </div>
+            <div class="option" data-target="#panel6v">
+              <div class="d-flex">
+                <i class="fas fa-credit-card"></i> &nbsp; Setări de plată
+              </div>
+            </div>
+            <div class="option" data-target="#panel7v">
+              <div class="d-flex">
+                <i class="fas fa-lock"></i> &nbsp; Securitate
+              </div>
+            </div>
+            <div class="option" data-target="#panel8v">
+              <div class="d-flex">
+                <i class="fas fa-sign-out-alt"></i> &nbsp; Deconectează-te
+              </div>
+            </div>
+            <div class="option" data-target="#panel9v">
+              <div class="d-flex">
+                <i class="fas fa-trash"></i> &nbsp; Ștergere cont
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Tabs (Desktop only) -->
+        <div class="col-lg-3 d-none d-lg-block sidebar-tabs-section">
+          <ul class="nav nav-pills flex-column" id="vertical-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#panel1v"
+                ><i class="fas fa-user"></i> Informații personale</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel2v"
+                ><i class="fas fa-star"></i> Sorridi Points</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel3v"
+                ><i class="fas fa-ticket-alt"></i> Vouchers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel4v"
+                ><i class="fas fa-history"></i> Istoric comenzi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel5v"
+                ><i class="fas fa-map-marker-alt"></i> Detalii livrare</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel6v"
+                ><i class="fas fa-credit-card"></i> Setări de plată</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel7v"
+                ><i class="fas fa-lock"></i> Securitate</a
+              >
+            </li>
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#logoutmodal">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel8v"
+                ><i class="fas fa-sign-out-alt"></i> Deconectează-te</a
+              >
+            </li>
+            <li class="nav-item" data-bs-toggle="modal" data-bs-target="#deletemodal">
+              <a class="nav-link" data-bs-toggle="pill" href="#panel9v"
+                ><i class="fas fa-trash"></i> Ștergere cont</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="col-lg-9 col-md-12 tabs-major-section">
+            <div class="tab-content">
+              <!-- Panel 1: Personal Info -->
+              <div class="tab-pane fade show active" id="panel1v">
+                <div class="all-forms-head">
+                  <h1>Informații personale</h1>
+                  <p>Completează sau actualizează detaliile tale personale.</p>
+                </div>
+                <div class="inquiry-form">
+                  <div class="form-group">
+                    <label for="first-name" class="update-name">First Name</label>
+                    <input class="form-control update-here" id="first-name" type="text" name="FirstName" placeholder="Usama" />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="last-name" class="update-name">Last Name</label>
+                    <input class="form-control update-here" id="last-name" type="text" name="LastName" placeholder="Aslam" />
+                  </div>
+                  <div class="update-top">
+                    <a href="#"><button class="update-btn">Update</button></a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Panel 2: Sorridi Points -->
+              <div class="tab-pane fade" id="panel2v">
+                <div class="main-section">
+                  <div class="sorridi-header">
+                    <h2>Sorridi Points</h2>
+                    <div class="invitation-code">
+                      <span>Invitation Code:</span>&nbsp;
+                      <strong class="code">
+                        <span class="code-text">7&98Y2x79</span>&nbsp;
+                        <i class="fa-solid fa-paste copy-icon" title="Click to Copy"></i>
+                      </strong>
+                    </div>
+                  </div>
+                  <p class="subtext">Verifică punctele acumulate și recompensele disponibile.</p>
+          
+                  <div class="table-responsive">
+                    <table class="table custom-table">
+                      <thead class="table-header">
+                        <tr>
+                          <th>Acțiune</th>
+                          <th>Puncte câștigate</th>
+                          <th class="mobile-hide">Descriere</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Plasează o comandă</td>
+                          <td>1 punct la fiecare 5 RON</td>
+                          <td class="mobile-hide">Punctele se adaugă automat după fiecare achiziție</td>
+                        </tr>
+                        <tr>
+                          <td>Creează un cont</td>
+                          <td>+50 puncte</td>
+                          <td class="mobile-hide">Bonus la înregistrarea inițială</td>
+                        </tr>
+                        <tr class="mobile-hide">
+                          <td>Recomandă un prieten</td>
+                          <td>+10 puncte</td>
+                          <td>După prima comandă a prietenului</td>
+                        </tr>
+                        <tr>
+                          <td>Ziua ta de naștere</td>
+                          <td>+20 puncte</td>
+                          <td class="mobile-hide">Dacă ai completat data nașterii în profil</td>
+                        </tr>
+                        <tr class="total-row">
+                          <td colspan="3">
+                            <strong>Total Earned Sorridi Points</strong>
+                            <span class="points-earned mobile-hide">122 Points</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+          
+                  <h3 class="section-title">Răscumpără Recompense</h3>
+                  <p class="title-text">Transformă-ți punctele în recompense!</p>
+          
+                  <div class="table-responsive">
+                    <table class="table custom-table last">
+                      <thead class="table-header">
+                        <tr>
+                          <th>Recompensă</th>
+                          <th>Cost</th>
+                          <th class="mobile-hide">Acțiune</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>O băutură gratuită</td>
+                          <td>100 puncte</td>
+                          <td class="button-style mobile-hide">
+                            <button class="btn-redeem">Răscumpără</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Desert gratuit</td>
+                          <td>200 puncte</td>
+                          <td class="button-style mobile-hide">
+                            <button class="btn-redeem">Răscumpără</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pizza medie gratuită</td>
+                          <td>500 puncte</td>
+                          <td class="button-style mobile-hide">
+                            <button class="btn-redeem">Răscumpără</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Panel 3: Vouchers -->
+              <div class="tab-pane fade" id="panel3v">
+                <div class="payment-head">
+                    <h1 class="section-title pt-3">Voucherele</h1>
+                    <div class="payment-new-btn">
+                      <p class="text-headings">Folosește aceste coduri pentru reduceri exclusive</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-4">
+                      <div class="coupon-card">
+                        <div class="discount-background">25%</div>
+                        <p class="coupen-text" style="position: relative; z-index: 1">
+                          Winter Promotion
+                        </p>
+                        <div class="discount-text">25%</div>
+                        <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                        <div class="coupon-line"></div>
+                        <button class="btn btn-coupen">Recompensă</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coupon-card">
+                          <div class="discount-background">50%</div>
+                          <p class="coupen-text" style="position: relative; z-index: 1">
+                            Winter Promotion
+                          </p>
+                          <div class="discount-text">50%</div>
+                          <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                          <div class="coupon-line"></div>
+                          <button class="btn btn-coupen">Recompensă</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coupon-card">
+                          <div class="discount-background">75%</div>
+                          <p class="coupen-text" style="position: relative; z-index: 1">
+                            Winter Promotion
+                          </p>
+                          <div class="discount-text">75%</div>
+                          <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                          <div class="coupon-line"></div>
+                          <button class="btn btn-coupen">Recompensă</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coupon-card">
+                          <div class="discount-background">10%</div>
+                          <p class="coupen-text" style="position: relative; z-index: 1">
+                            Winter Promotion
+                          </p>
+                          <div class="discount-text">10%</div>
+                          <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                          <div class="coupon-line"></div>
+                          <button class="btn btn-coupen">Recompensă</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coupon-card">
+                          <div class="discount-background">30%</div>
+                          <p class="coupen-text" style="position: relative; z-index: 1">
+                            Winter Promotion
+                          </p>
+                          <div class="discount-text">30%</div>
+                          <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                          <div class="coupon-line"></div>
+                          <button class="btn btn-coupen">Recompensă</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coupon-card">
+                          <div class="discount-background">60%</div>
+                          <p class="coupen-text" style="position: relative; z-index: 1">
+                            Winter Promotion
+                          </p>
+                          <div class="discount-text">60%</div>
+                          <p class="coupen-off" style="position: relative; z-index: 1">OFF</p>
+                          <div class="coupon-line"></div>
+                          <button class="btn btn-coupen">Recompensă</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Panel 4: Order History -->
+              <div class="tab-pane fade" id="panel4v">
+                <div class="payment-head">
+                  <h1 class="section-title pt-5">Istoric comenzi</h1>
+                  <div class="payment-new-btn">
+                    <p class="text-headings">Vezi comenzile tale anterioare și plasează-le din nou rapid.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Order Card 1 -->
+                  <div class="col-md-4 pt-4">
+                    <div class="card-dessert">
+                      <div class="card-dessert-pic">
+                        <img src="assets/img/image 33.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-dessert-content pt-4">
+                        <h3>Tiramisu Tradizionale</h3>
+                        <p class="pt-3 pb-3">Mascarpone 80g, Ladyfingers 60g, Espresso 30ml, Cocoa powder 2g, Egg yolk cream 40g</p>
+                        <span>42.00 Lei</span>
+                        <div class="card-dessert-btn pt-3">
+                          <a href="#"><button class="btn form-btns" type="button">Cumpără din nou</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Order Card 2 -->
+                  <div class="col-md-4 pt-4">
+                    <div class="card-dessert">
+                      <div class="card-dessert-pic">
+                        <img src="assets/img/image 41.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-dessert-content pt-4">
+                        <h3>Limonadă cu Mango</h3>
+                        <p class="pt-3 pb-3">Mango purée 40g, Lemon juice 30ml, Sparkling water 180ml, Sugar 10g, Ice 100g</p>
+                        <span>42.00 Lei</span>
+                        <div class="card-dessert-btn pt-3">
+                          <a href="#"><button class="btn form-btns" type="button">Cumpără din nou</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Order Card 3 -->
+                  <div class="col-md-4 pt-4">
+                    <div class="card-dessert">
+                      <div class="card-dessert-pic">
+                        <img src="assets/img/image 23.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="card-dessert-content pt-4">
+                        <h3>BUFALINA S.T.G. (450g)</h3>
+                        <p class="pt-3 pb-3">Blat napoletan, sos de roșii, mozzarella di bufala d.o.p, parmigiano, busuioc</p>
+                        <div class="card-dessert-price pt-3">
+                          <span>42.00 Lei</span>
+                        </div>
+                        <div class="card-dessert-btn pt-3">
+                          <a href="#"><button class="btn form-btns" type="button">Cumpără din nou</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Panel 5: Delivery Info -->
+              <div class="tab-pane fade" id="panel5v">
+                <div class="all-forms-head">
+                  <h1>Detalii livrare</h1>
+                  <p>Gestionează adresele de livrare salvate și preferințele tale.</p>
+                </div>
+                <div class="inquiry-form">
+                  <div class="form-group">
+                    <label for="address" class="update-name">Street Address</label>
+                    <input class="form-control update-here" id="address" type="text" name="StreetAddress" placeholder="Street Address" />
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="country" class="update-name">Country</label>
+                    <input class="form-control update-here" id="country" type="text" name="Country" placeholder="Country" />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="state" class="form-label update-name">State</label>
+                      <input type="text" class="form-control update-here" id="state" placeholder="State" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="city" class="form-label update-name">City</label>
+                      <input type="text" class="form-control update-here" id="city" placeholder="City" />
+                    </div>
+                  </div>
+                  <div class="update-top">
+                    <a href="#"><button class="update-btn">Update</button></a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Panel 6: Payment Settings -->
+              <div class="tab-pane fade" id="panel6v">
+              
+            
+                <!-- Card List Section -->
+                <div class="row" id="cardListSection">
+                    <div class="payment-head">
+                        <h1 class="section-title pt-5">Setări de plată</h1>
+                        <div class="payment-new-btn">
+                            <p class="text-headings">Adaugă, editează sau elimină metodele de plată.</p>
+                            <a href="#"><button class="btn" type="button" id="addNewCardBtn">Add New Card</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-4">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                                <img src="assets/img/solar_card-bold.svg" alt="" class="img-fluid">
+                                <h3>Visa **** 1234</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>Expiră: 04/26</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Delete</button></a>
+                            </div>
+                            <div class="pay-title pt-3">
+                                <p>Maria Popescu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-3">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                                <img src="assets/img/solar_card-bold.svg" alt="" class="img-fluid">
+                                <h3>Mastercard **** 1234</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>Expiră: 04/26</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Delete</button></a>
+                            </div>
+                            <div class="pay-title pt-3">
+                                <p>Maria Popescu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-3">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                                <img src="assets/img/solar_card-bold.svg" alt="" class="img-fluid">
+                                <h3>Visa **** 5678</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>Expiră: 08/25</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Delete</button></a>
+                            </div>
+                            <div class="pay-title pt-3">
+                                <p>Ion Ionescu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Add New Card Form Section -->
+                <div id="addCardFormSection" style="display: none;">
+                    <div class="all-forms-head">
+                        <h1>Setări de plată</h1>
+                        <p>Adaugă, editează sau elimină metodele de plată.</p>
+                    </div>
+                    <div class="inquiry-form">
+                        <div class="form-group">
+                            <label for="cardHolderName" class="update-name">Card Holder Name</label>
+                            <input class="form-control update-here" id="cardHolderName" type="text" name="Name" placeholder="Card Holder Name">
+                        </div>
+            
+                        <div class="form-group credit-card">
+                            <label for="cardNumber" class="update-name">Card Number</label>
+                            <input class="form-control update-here" id="cardNumber" type="text" name="CardNumber" placeholder="Card Number">
+                            <div class="card-icons">
+                                <img src="assets/img/Mastercard.svg" alt="Mastercard" />
+                                <img src="assets/img/Payment method icon.svg" alt="Visa" />
+                                <img src="assets/img/GooglePay.svg" alt="GPay" />
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="cvv" class="form-label update-name">CVV</label>
+                                <input type="text" class="form-control update-here" id="cvv" placeholder="CVV">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="expiryDate" class="form-label update-name">Expiry Date</label>
+                                <input type="text" class="form-control update-here" id="expiryDate" placeholder="MM/YYYY">
+                            </div>
+                        </div>
+            
+                        <div class="update-top">
+                            <a href="#"><button class="update-btn">Update</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+              <!-- Panel 7: Payment Settings -->
+              <div class="tab-pane fade" id="panel7v">
+                <div class="payment-head">
+                    <h1 class="section-title pt-5">Securitate</h1>
+                   <div class="payment-new-btn">
+                    <p class="text-headings">Schimbă parola și consultă activitatea de autentificare.</p>
+                   </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-12 pt-4">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                                
+                                <h3>Email Address</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>iamusama@duck.com</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Change</button></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-3">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                               
+                                <h3>Phone Number</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>+92 32 ***** 636</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Change</button></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-3">
+                        <div class="card-body de-card">
+                            <div class="payment-method">
+                                
+                                <h3>Password</h3>
+                            </div>
+                            <div class="expiry-delete pt-3">
+                                <p>****************</p>
+                                <a href="#"><button class="btn form-btns log-btn" type="button">Change</button></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                   </div>
+              </div>
+              <!-- Panel 8: Payment Settings -->
+              <div class="tab-pane fade" id="panel8v">
+                <div class="all-forms-head">
+                    <h1>Securitate</h1>
+                    <p>Schimbă parola și consultă activitatea de autentificare.</p>
+                </div>
+                <div class="inquiry-form">
+                    <div class="form-group">
+                        <label for="name" class="update-name">Email/Phone</label>
+                        <input class="form-control update-here" id="phone" type="phone" name="Name" placeholder="Email/Phone">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="name" class="update-name">Verification Code</label>
+                        <input class="form-control update-here" id="phone" type="phone" name="Name" placeholder="Verification Code">
+                      </div>
+                      <div class="update-top">
+                        <a href="#"><button class="update-btn" >Update</button></a>
+                      </div>
+                </div>
+              </div>
+              <!-- Panel 9: Payment Settings -->
+              <div class="tab-pane fade" id="panel9v">
+                <div class="all-forms-head">
+                    <h1>Securitate</h1>
+                    <p>Schimbă parola și consultă activitatea de autentificare.</p>
+                </div>
+                <div class="inquiry-form">
+                    <div class="form-group">
+                        <label for="name" class="update-name">Email/Phone</label>
+                        <input class="form-control update-here" id="phone" type="phone" name="Name" placeholder="Email/Phone">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="name" class="update-name">Verification Code</label>
+                        <input class="form-control update-here" id="phone" type="phone" name="Name" placeholder="Verification Code">
+                      </div>
+                      <div class="update-top">
+                        <a href="#"><button class="update-btn" >Update</button></a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-5 footer-section">
+      <div class="container text-center">
+        <p>© 2025 Sorridi Pizza. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+      <!-- Logout Modal Code -->
+  <div class="modal fade text-center" id="logoutmodal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content logout-modal">
+          <h5 class="modal-title ">Deconectează-te din cont</h5>
+        <div class="modal-body">
+          <p>Ești sigur că vrei să te deconectezi? Vei fi delogat din sesiunea curentă și redirecționat către pagina principală.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn outline-butn" data-bs-dismiss="modal"><a href="#">Anulează</a></button>
+          </div>
+          <div class="col-md-6 ">
+            <button type="button" class="btn red-butn"><a href="#">Deconectează-te</a></button>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <!-- Delete Modal Code -->
+    <div class="modal fade text-center" id="deletemodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content logout-modal">
+              <h5 class="modal-title ">Ești sigur că vrei să îți ștergi contul?</h5>
+            <div class="modal-body">
+              <p>Această acțiune este permanentă și nu poate fi anulată. Toate datele, comenzile și recompensele tale vor fi pierdute.</p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button" class="btn outline-butn" data-bs-dismiss="modal"><a href="#">Anulează</a></button>
+              </div>
+              <div class="col-md-6 ">
+                <button type="button" class="btn red-butn"><a href="#">Șterge contul</a></button>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+        <!-- Script to handle tab stay and toggle form -->
+<script>
+    $(document).ready(function() {
+      $('#addNewCardBtn').on('click', function(e) {
+        e.preventDefault();
+        // Ensure #panel6v tab stays active
+        $('#panel6v').addClass('show active');
+        // Hide card list, show new form
+        $('#cardListSection').hide();
+        $('#addCardFormSection').show();
+      });
+    });
+  </script>
+    <!-- navbar sidebar js -->
+    <script>
+      const sidebar = document.getElementById("mobileSidebar");
+      const overlay = document.getElementById("sidebarOverlay");
+      const toggleBtn = document.getElementById("openSidebar");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        overlay.style.display = "block";
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.style.display = "none";
+      });
+    </script>
+    <script>
+      // Toggle mobile dropdown
+      $("#dropdown-toggle").on("click", function () {
+        $("#dropdown-options").slideToggle(150);
+      });
+
+      // Mobile option click
+      $("#dropdown-options .option").on("click", function () {
+        const target = $(this).data("target");
+
+        $("#dropdown-options .option").removeClass("active");
+        $(this).addClass("active");
+        $("#dropdown-toggle").html($(this).html());
+        $("#dropdown-options").slideUp(150);
+
+        $(".tab-pane").removeClass("show active");
+        $(target).addClass("show active");
+
+        $("#vertical-tabs .nav-link").removeClass("active");
+        $('#vertical-tabs .nav-link[href="' + target + '"]').addClass("active");
+      });
+
+      // Desktop tab click
+      $("#vertical-tabs .nav-link").on("click", function () {
+        const target = $(this).attr("href");
+
+        $("#vertical-tabs .nav-link").removeClass("active");
+        $(this).addClass("active");
+
+        $(".tab-pane").removeClass("show active");
+        $(target).addClass("show active");
+
+        const option = $(
+          '#dropdown-options .option[data-target="' + target + '"]'
+        );
+        $("#dropdown-options .option").removeClass("active");
+        option.addClass("active");
+        $("#dropdown-toggle").html(option.html());
+      });
+    </script>
+  </body>
+</html>

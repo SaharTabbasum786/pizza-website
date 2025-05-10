@@ -1,0 +1,1331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8a4f8a69d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+  <!-- Top navbar -->
+  <nav class="navbar navbar-expand-lg navbar-top">
+    <div class="container">
+      <div class="call-section">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+40767345678">+40 767 345 678</a>
+        </a>
+      </div>
+      <span class="navbar-text">
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </span>
+    </div>
+  </nav>
+
+  <!-- MAIN NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-main">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand logo-img" href="index.html">
+        <img src="assets/img/Logo.png" width="100" />
+      </a>
+
+      <!-- Mobile cart icon and toggle button -->
+      <div class="d-flex d-lg-none align-items-center ms-auto">
+        <a href="menu-cart.html" class="me-3"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <button class="navbar-toggler" type="button" id="openSidebar">
+          <i class="fa-solid fa-bars toggle-bars"></i>
+        </button>
+      </div>
+
+      <!-- Desktop navbar -->
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav active-nav">
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="index.html">Acasa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="about-us.html"
+              >Despre noi</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active navbar-links-sec" href="menus.html"
+              >Meniu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="location.html"
+              >Locatie</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="catering.html"
+              >Catering</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="track-order.html"
+              >urmărirea comenzii</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-links-sec" href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item btn-section">
+            <a href="create-account.html"
+              ><button class="btn form-btns reg-btn">Register</button></a
+            >
+          </li>
+          <li class="nav-item btn-section">
+            <a href="authentication.html"
+              ><button class="btn form-btns log-btn">Login</button></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desktop cart & buttons -->
+      <div class="d-none d-lg-flex align-items-center">
+        <a href="menu-cart.html" class="me-3"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="create-account.html"
+          ><button class="btn form-btns reg-btn" type="button">
+            Register
+          </button></a
+        >
+        <a href="authentication.html"
+          ><button class="btn form-btns" type="button">Login</button></a
+        >
+      </div>
+    </div>
+  </nav>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div>
+      <div class="sidebar-header">
+        <img src="assets/img/logo.png" alt="Logo" />
+      </div>
+      <ul class="sidebar-menu">
+        <a href="index.html"
+          ><li><i class="fas fa-home"></i> Acasa</li></a
+        >
+        <a href="about-us.html"
+          ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+        >
+        <a href="menus.html"
+          ><li class="active"><i class="fas fa-utensils"></i> Meniu</li></a
+        >
+        <a href="location.html"
+          ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
+        >
+        <a href="catering.html"
+          ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
+        >
+        <a href="track-order.html"
+          ><li><i class="fas fa-truck"></i> urmărirea comenzii</li></a
+        >
+
+        <a href="contact.html"
+          ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+        >
+      </ul>
+    </div>
+    <div class="sidebar-bottom">
+      <a href="authentication.html"
+        ><button class="btn login-red-btn">Login</button></a
+      >
+      <a href="create-account.html"
+        ><button class="btn reg-green-btn">Register</button></a
+      >
+    </div>
+  </div>
+      <!-- BACKGROUND -->
+      <div class="container-fluid p-0">
+                <div class="bg-green">
+                    <h1>Meniu</h1>
+                </div>
+    </div>
+
+   <!-- TABS -->
+   <div class="container page-container">
+    <div class="tab-container">
+      <ul class="nav nav-pills custom-nav" id="menu-tabs" role="tablist">
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pizza" type="button">Pizza</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#antipasto" type="button">Antipasto</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#paste" type="button">Paste</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#panini" type="button">Panini</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#box" type="button">Box</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#salate" type="button">Salate</button>
+        </li>
+        <li class="nav-item items-space" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#dessert" type="button">Dessert</button>
+        </li>
+        <li class="nav-item items-space no-right" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bauturi" type="button">Bauturi</button>
+        </li>
+      </ul>
+    </div>
+   </div>
+   <div class="container">
+   <div class="tab-content" id="menu-tabs-content">
+    <div class="tab-pane fade show active" id="pizza" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Northern Italy</h1>
+            <p>Reduceri exclusive la produsele tale preferate, disponibile doar astăzi!</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/milano.png" class="card-img-top centered-img" alt="Pizza Milano">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Milano</h5>
+                  <p class="card-text">Mozzarella fior di latte 40 gr,mozzarella di bufala 35 gr, sos rosii 60 gr , grana padano 15 gr, salam picant 50 gr, busuioc 4 gr, ulei extra virgin 5 ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/parma.png" class="card-img-top centered-img" alt="Pizza Parma">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Parma</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, prosciutto crudo 50 gr, rosii cherry 30 gr, sos rosii 60 gr , rucola 15 gr, grana padano 10 gr, crema trufe 10 gr, ulei extra virgin 5 ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/torino.png" class="card-img-top centered-img" alt="Torino Pizza">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Torino</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, prosciutto crudo 50 gr, rosii cherry 30 gr, sos rosii 60 gr , rucola 15 gr, grana padano 10 gr, crema trufe 10 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Padova.png" class="card-img-top centered-img" alt="Pizza Padova">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Padova</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, prosciutto crudo 50 gr, rosii cherry 30 gr, sos rosii 60 gr , rucola 15 gr, grana padano 10 gr, crema trufe 10 gr, ulei extra virgin 5 ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="pizza-tab">
+            <h1>Central Italy</h1>
+            <p>Reduceri exclusive la produsele tale preferate, disponibile doar astăzi!</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza Roma.png" class="card-img-top centered-img" alt="Pizza Roma">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Roma</h5>
+                  <p class="card-text">Mozzarella di bufala70 gr, prosciutto cotto70 gr, ciuperci chiodini 15 gr, sos rosii 100 gr , busuioc , 4 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza Lazio.png" class="card-img-top centered-img" alt="Pizza Lazio">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Lazio</h5>
+                  <p class="card-text">Mozzarella di bufala70 gr, prosciutto cotto70 gr, ciuperci chiodini 15 gr, sos rosii 100 gr , busuioc , 4 gr, ulei extra virgin 5 ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/Pizza Siena.png" class="card-img-top centered-img" alt="Pizza Siena">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Siena</h5>
+                  <p class="card-text">Mozzarella di bufala70 gr, prosciutto cotto70 gr, ciuperci chiodini 15 gr, sos rosii 100 gr , busuioc , 4 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza Venezia.png" class="card-img-top centered-img" alt="Pizza Venezia">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Venezia</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr , rucola 15 gr, prosciutto cotto 70 gr , rosii cherry 30 gr, grana padano 15 gr , gran cucina 15 gr ,  ulei extra virgin 5 gr</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Southern Italy & Islands</h1>
+            <p>Reduceri exclusive la produsele tale preferate, disponibile doar astăzi!</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Calabria.png" class="card-img-top centered-img" alt="Pizza Calabria">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Calabria</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, sos rosii 100 gr, grana padano 15 gr, busuioc 4 gr, ulei extra virgin 5 ml
+
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Sicilia.png" class="card-img-top centered-img" alt="Pizza Sicilia">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Sicilia</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, sos rosii 100 gr, grana padano 15 gr, busuioc 4 gr, ulei extra virgin 5 ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/Pizza-Palermo.png" class="card-img-top centered-img" alt="Pizza Siena">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Palermo</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, sos rosii 100 gr, grana padano 15 gr, busuioc 4 gr, ulei extra virgin 5 ml
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Napoli.png" class="card-img-top centered-img" alt="Pizza Venezia">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Napoli</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, sos rosii 100 gr, grana padano 15 gr, busuioc 4 gr, ulei extra virgin 5 ml
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Signature & House Speacial</h1>
+            <p>Reduceri exclusive la produsele tale preferate, disponibile doar astăzi!</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Bologna.png" class="card-img-top centered-img" alt="Pizza Bologna">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Bologna</h5>
+                  <p class="card-text">Mozzarela fior di latte 80 gr, mortadella 70 gr  , ricotta 25 gr, fistic 10 gr, gran cucina 20 gr ,ulei extra virgin 5 ml, busuioc 4 gr</p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Italia.png" class="card-img-top centered-img" alt="Pizza Italia">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Italia/h5>
+                  <p class="card-text">Mozzarella fior di latte 100 gr, branza gorgonzola 30 gr, taleggio 25 gr, gran cucina 30 gr , ulei extra virgin 5ml , piper negru
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/Pizza-Sorridi.png" class="card-img-top centered-img" alt="Pizza Sorridi">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Sorridi</h5>
+                  <p class="card-text">Mozzarella fior di latte 80 gr, prosciutto cotto 70 gr, gran cucina 15 gr crema trufe 10 gr, grana padano 15 gr , ulei extra virgin 5 ml, busuioc 4 gr
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/Pizza-Maestro.png" class="card-img-top centered-img" alt="Pizza Maestro">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Pizza Maestro</h5>
+                  <p class="card-text">Mozzarella fior di latte 100 gr, branza gorgonzola 30 gr, taleggio 25 gr, gran cucina 30 gr , ulei extra virgin 5ml , piper negru
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="pizza-details.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade" id="antipasto" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="soccer-box">
+            <img src="assets/img/deal-box1.jpg" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-4.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-5.png" alt="">
+                </div>
+            </div>
+          </div>
+          
+          <div class="soccer-box box-end">
+            <img src="assets/img/deal-box-2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="paste" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Classic & Creamy</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-1.png" class="card-img-top centered-img" alt="Quattro Formaggi">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Quattro Formaggi</h5>
+                  <p class="card-text">Penne 120g, Four-cheese mix 80g, Cream 50ml, Black pepper 1g, Parmesan 10g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-2.png" class="card-img-top centered-img" alt="Tagliatelle Alfredo">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Tagliatelle Alfredo</h5>
+                  <p class="card-text">Tagliatelle 120g, Butter 30g, Cream 50ml, Parmesan 30g, Garlic 3g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/pasta-3.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Spaghetti Carbonara</h5>
+                  <p class="card-text">Spaghetti 120g, Pancetta 50g, Egg yolk 1pc, Parmesan 30g, Black pepper 1g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-4.png" class="card-img-top centered-img" alt="Rigatoni al Pesto">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Rigatoni al Pesto</h5>
+                  <p class="card-text">Rigatoni 120g, Basil pesto 40g, Cherry tomatoes 30g, Parmesan 20g, Pine nuts 5g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="pizza-tab">
+            <h1>Spicy & Bold</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-4.png" class="card-img-top centered-img" alt="Penne Arrabbiata">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Penne Arrabbiata</h5>
+                  <p class="card-text">Penne 120g, Spicy tomato sauce 80g, Garlic 5g, Chili flakes 2g, Olive oil 10ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-3.png" class="card-img-top centered-img" alt="Fusilli Piccanti">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Fusilli Piccanti</h5>
+                  <p class="card-text">Fusilli 120g, Spicy salami 50g, Tomato sauce 60g, Onion 30g, Parmesan 20g
+
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/pasta-1.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Spaghetti Aglio e Olio</h5>
+                  <p class="card-text">Spaghetti 120g, Garlic 8g, Olive oil 20ml, Chili flakes 1g, Parsley 3g
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-2.png" class="card-img-top centered-img" alt="Orecchiette Calabria">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Orecchiette Calabria</h5>
+                  <p class="card-text">Orecchiette 120g, Sausage 60g, Broccoli rabe 40g, Garlic 5g, Chili oil 10ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Fresh & Veggie</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-2.png" class="card-img-top centered-img" alt="Farfalle Primavera">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Farfalle Primavera</h5>
+                  <p class="card-text">Farfalle 120g, Zucchini 40g, Bell peppers 30g, Carrots 30g, Cream 40ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-1.png" class="card-img-top centered-img" alt="Gnocchi Pomodoro">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Gnocchi Pomodoro</h5>
+                  <p class="card-text">Potato gnocchi 120g, Tomato sauce 80g, Basil 5g, Mozzarella 40g, Olive oil 10ml
+
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/pasta-4.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Lasagna Verde</h5>
+                  <p class="card-text">Lasagna sheets 100g, Spinach 50g, Ricotta 40g, Tomato sauce 60g, Parmesan 30g
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/pasta-3.png" class="card-img-top centered-img" alt="Penne Vegano">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Penne Vegano</h5>
+                  <p class="card-text">Penne 120g, Grilled eggplant 40g, Zucchini 30g, Vegan pesto 30g, Cherry tomatoes 30g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="panini" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Italian-Inspired Classics</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-1.png" class="card-img-top centered-img" alt="Panino Caprese">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Caprese</h5>
+                  <p class="card-text">Mozzarella 80g, Tomato 60g, Fresh basil 5g, Olive oil 10ml, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-2.png" class="card-img-top centered-img" alt="Panino Parma">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Parma</h5>
+                  <p class="card-text">Prosciutto crudo 50g, Arugula 15g, Parmesan flakes 20g, Olive oil 5ml, Bread 120g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/paini-3.png" class="card-img-top centered-img" alt="Panino Napoli">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Napoli</h5>
+                  <p class="card-text">Spicy salami 60g, Provolone 50g, Tomato 40g, Oregano 1g, Bread 120g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-4.png" class="card-img-top centered-img" alt="Panino Milano">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Milano</h5>
+                  <p class="card-text">Mortadella 60g, Mozzarella 50g, Pesto sauce 20g, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="pizza-tab">
+            <h1>Hot & Hearty</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-4.png" class="card-img-top centered-img" alt="Panino Piccante">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Piccante</h5>
+                  <p class="card-text">Spicy salami 60g, Grilled peppers 50g, Hot sauce 10ml, Cheese 30g, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-3.png" class="card-img-top centered-img" alt="Panino Parma">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Pollo BBQ</h5>
+                  <p class="card-text">Grilled chicken 80g, Cheddar cheese 40g, BBQ sauce 15g, Lettuce 20g, Bread 120g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/paini-1.png" class="card-img-top centered-img" alt="Panino Crocant">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Crocant</h5>
+                  <p class="card-text">Crispy chicken 90g, Coleslaw 60g, Garlic mayo 15g, Bread 120g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-2.png" class="card-img-top centered-img" alt="Panino Sorridi">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Sorridi</h5>
+                  <p class="card-text">Creamy cheese 50g, Roasted vegetables 70g, House sauce 20g, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Fresh & Veggie</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-3.png" class="card-img-top centered-img" alt="Panino Piccante">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Piccante</h5>
+                  <p class="card-text">Spicy salami 60g, Grilled peppers 50g, Hot sauce 10ml, Cheese 30g, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-1.png" class="card-img-top centered-img" alt="Panino Pollo BBQ">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Pollo BBQ</h5>
+                  <p class="card-text">Grilled chicken 80g, Cheddar cheese 40g, BBQ sauce 15g, Lettuce 20g, Bread 120g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/paini-2.png" class="card-img-top centered-img" alt="Panino Crocant">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Crocant</h5>
+                  <p class="card-text">Crispy chicken 90g, Coleslaw 60g, Garlic mayo 15g, Bread 120g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/paini-4.png" class="card-img-top centered-img" alt="Panino Sorridi">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Panino Sorridi</h5>
+                  <p class="card-text">Creamy cheese 50g, Roasted vegetables 70g, House sauce 20g, Bread 120g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="box" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="soccer-box">
+            <img src="assets/img/deal-box1.jpg" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-3.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-4.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="short-deals">
+                <img src="assets/img/deal-box-5.png" alt="">
+                </div>
+            </div>
+          </div>
+          
+          <div class="soccer-box box-end">
+            <img src="assets/img/deal-box-2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="salate" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Fresh & Classic</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-1.png" class="card-img-top centered-img" alt="Salată Caesar">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Caesar</h5>
+                  <p class="card-text">Romaine lettuce 80g, Grilled chicken 70g, Croutons 30g, Parmesan 20g, Caesar dressing 30ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-2.png" class="card-img-top centered-img" alt="Salată Caprese">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Caprese</h5>
+                  <p class="card-text">Tomatoes 80g, Fresh mozzarella 70g, Basil 5g, Olive oil 10ml, Balsamic glaze 5ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/salate-3.png" class="card-img-top centered-img" alt="Salată Tonno">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Tonno</h5>
+                  <p class="card-text">Tuna 60g, Corn 40g, Lettuce 60g, Cherry tomatoes 40g, Olives 10g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-1.png" class="card-img-top centered-img" alt="Salată Grecească">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Grecească</h5>
+                  <p class="card-text">Cucumbers 50g, Tomatoes 50g, Red onion 20g, Feta 40g, Kalamata olives 15g, Oregano 1g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="pizza-tab">
+            <h1>Fresh & Classic</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-2.png" class="card-img-top centered-img" alt="Salată Caesar">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Primavera</h5>
+                  <p class="card-text">Mixed greens 50g, Carrots 30g, Bell peppers 30g, Radishes 20g, Lemon vinaigrette 20ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-3.png" class="card-img-top centered-img" alt="Salată Caprese">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Verde cu Nuci</h5>
+                  <p class="card-text">Baby spinach 60g, Arugula 30g, Walnuts 15g, Apple slices 40g, Honey-mustard dressing 20ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/salate-1.png" class="card-img-top centered-img" alt="Salată Tonno">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Rucola & Pere</h5>
+                  <p class="card-text">Arugula 50g, Pear slices 40g, Gorgonzola 30g, Walnuts 10g, Balsamic glaze 5ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-2.png" class="card-img-top centered-img" alt="Salată Grecească">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Mediteraneană</h5>
+                  <p class="card-text">Mixed greens 40g, Chickpeas 50g, Cucumber 30g, Red onion 20g, Olive oil & lemon 15ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Fresh & Veggie</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-3.png" class="card-img-top centered-img" alt="Salată Caesar">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Rich & Filling/h5>
+                  <p class="card-text">Romaine 60g, Salami 40g, Mozzarella 40g, Cherry tomatoes 30g, Olives 10g, Italian dressing 20ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-1.png" class="card-img-top centered-img" alt="Salată Caprese">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată cu Pui Crocant</h5>
+                  <p class="card-text">Lettuce 60g, Crispy chicken strips 70g, Corn 30g, Cherry tomatoes 30g, Ranch dressing 25ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/salate-2.png" class="card-img-top centered-img" alt="Salată Tonno">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Quinoa Mix</h5>
+                  <p class="card-text">Quinoa 60g, Avocado 50g, Black beans 40g, Corn 30g, Lime vinaigrette 15ml
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/salate-3.png" class="card-img-top centered-img" alt="Salată Grecească">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Salată Vegană</h5>
+                  <p class="card-text">Leafy greens 50g, Grilled tofu 60g, Carrot 30g, Cucumber 30g, Vegan dressing 20ml</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="dessert" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Classic Italian Favorites</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/dessert-1.png" class="card-img-top centered-img" alt="Salată Caesar">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Tiramisu Tradizionale</h5>
+                  <p class="card-text">Mascarpone 80g, Ladyfingers 60g, Espresso 30ml, Cocoa powder 2g, Egg yolk cream 40g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/dessert-2.png" class="card-img-top centered-img" alt="Salată Caprese">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Brownie Caldo</h5>
+                  <p class="card-text">Vanilla cream base 100g, Gelatin 3g, Mixed berries 30g, Mint leaf 1g, Sugar syrup 10ml
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/dessert-3.png" class="card-img-top centered-img" alt="Salată Tonno">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Cannoli Siciliani</h5>
+                  <p class="card-text">Fudge brownie 80g, Caramel sauce 15ml, Nuts 10g, Whipped cream 20g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/dessert-4.png" class="card-img-top centered-img" alt="Salată Grecească">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Gelato Trio</h5>
+                  <p class="card-text">Vanilla gelato 60g, Chocolate gelato 60g, Strawberry gelato 60g, Waffle crisp 10g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="bauturi" role="tabpanel">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Section 1 -->
+          <div class="pizza-tab">
+            <h1>Răcoritoare Clasice</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-1.png" class="card-img-top centered-img" alt="Quattro Formaggi">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă Clasică</h5>
+                  <p class="card-text">Fresh lemon juice 40ml, Water 200ml, Sugar syrup 20ml, Ice cubes 100g, Mint 1g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-2.png" class="card-img-top centered-img" alt="Tagliatelle Alfredo">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă cu Căpșuni</h5>
+                  <p class="card-text">Strawberry purée 40g, Lemon juice 30ml, Water 200ml, Sugar syrup 15ml, Ice 100g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/bauturi-3.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Ice Tea cu Piersici</h5>
+                  <p class="card-text">Peach syrup 30ml, Black tea 180ml, Lemon slice 5g, Ice cubes 100g, Mint 1g
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-4.png" class="card-img-top centered-img" alt="Rigatoni al Pesto">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">imonadă cu Mango</h5>
+                  <p class="card-text">Mango purée 40g, Lemon juice 30ml, Sparkling water 180ml, Sugar 10g, Ice 100g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2 -->
+          <div class="pizza-tab">
+            <h1>Cafea & Specialități</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-2.png" class="card-img-top centered-img" alt="Penne Arrabbiata">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă cu Căpșuni</h5>
+                  <p class="card-text">Strawberry purée 40g, Lemon juice 30ml, Water 200ml, Sugar syrup 15ml, Ice 100g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-1.png" class="card-img-top centered-img" alt="Fusilli Piccanti">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă Clasică</h5>
+                  <p class="card-text">Fresh lemon juice 40ml, Water 200ml, Sugar syrup 20ml, Ice cubes 100g, Mint 1g
+
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/bauturi-4.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">imonadă cu Mango</h5>
+                  <p class="card-text">Mango purée 40g, Lemon juice 30ml, Sparkling water 180ml, Sugar 10g, Ice 100g
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-3.png" class="card-img-top centered-img" alt="Orecchiette Calabria">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Ice Tea cu Piersici</h5>
+                  <p class="card-text">Peach syrup 30ml, Black tea 180ml, Lemon slice 5g, Ice cubes 100g, Mint 1g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="pizza-tab">
+            <h1>Băuturi Speciale</h1>
+            <p>Crocant, cald și plin de gust – mușcătura perfectă.</p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-2.png" class="card-img-top centered-img" alt="Farfalle Primavera">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă cu Căpșuni</h5>
+                  <p class="card-text">Strawberry purée 40g, Lemon juice 30ml, Water 200ml, Sugar syrup 15ml, Ice 100g
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-4.png" class="card-img-top centered-img" alt="Gnocchi Pomodoro">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">imonadă cu Mango</h5>
+                  <p class="card-text">Mango purée 40g, Lemon juice 30ml, Sparkling water 180ml, Sugar 10g, Ice 100g
+
+                </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" >
+                <img src="assets/img/bauturi-3.png" class="card-img-top centered-img" alt="Spaghetti Carbonara">
+
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Ice Tea cu Piersici</h5>
+                  <p class="card-text">Peach syrup 30ml, Black tea 180ml, Lemon slice 5g, Ice cubes 100g, Mint 1g  
+
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html" class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card">
+                <img src="assets/img/bauturi-1.png" class="card-img-top centered-img" alt="Penne Vegano">
+                <div class="card-body p-0">
+                  <h5 class="card-title text-uppercase">Limonadă Clasică</h5>
+                  <p class="card-text">Fresh lemon juice 40ml, Water 200ml, Sugar syrup 20ml, Ice cubes 100g, Mint 1g</p>
+                  <span>42.00 Lei</span>
+                  <a href="payout.html " class="btn pizza-btn">Cumpără acum! </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- Footer -->
+<footer class="mt-auto footer-section">
+    <div class="container text-center">
+      <p>© 2025 Sorridi Pizza. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+  <!-- Footer -->
+      <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

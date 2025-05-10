@@ -16,7 +16,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="style.css" />
     <title>Sorridi Pizza</title>
   </head>
   <body>
@@ -62,7 +61,7 @@
               <a class="nav-link navbar-links-sec" href="index.html">Acasa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-links-sec" href="about-us.html"
+              <a class="nav-link active navbar-links-sec" href="about-us.html"
                 >Despre noi</a
               >
             </li>
@@ -70,7 +69,7 @@
               <a class="nav-link navbar-links-sec" href="menus.html">Meniu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active navbar-links-sec" href="location.html"
+              <a class="nav-link navbar-links-sec" href="location.html"
                 >Locatie</a
               >
             </li>
@@ -133,15 +132,15 @@
             ><li><i class="fas fa-home"></i> Acasa</li></a
           >
           <a href="about-us.html"
-            ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+            ><li class="active">
+              <i class="fas fa-info-circle"></i> Despre noi
+            </li></a
           >
           <a href="menus.html"
             ><li><i class="fas fa-utensils"></i> Meniu</li></a
           >
           <a href="location.html"
-            ><li class="active">
-              <i class="fas fa-map-marker-alt"></i> Locatie
-            </li></a
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
           >
           <a href="catering.html"
             ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
@@ -167,110 +166,136 @@
     <!-- BACKGROUND -->
     <div class="container-fluid p-0">
       <div class="bg-green">
-        <h1>Locatie</h1>
+        <h1>Despre Noi</h1>
       </div>
     </div>
-    <div class="container location_wrapper">
+    <!-- cards section -->
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="section-title text-center pt-5 mb-0">
-            Vezi unde ne găsești în orașul tău
-          </h1>
-        </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="map-pin mt-4">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54308.75115445732!2d73.99679684521692!3d31.70778250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1746249040022!5m2!1sen!2s"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+          <div class="top-headings pt-5">
+            <span>Cine suntem noi</span>
+            <h1 class="section-title">Povestea noastră</h1>
+            <p>
+              Suntem mai mult decât o echipă – suntem o familie pasionată de
+              gusturi autentice și experiențe memorabile. Totul a început din
+              dorința de a aduce oamenilor un loc unde calitatea întâlnește
+              tradiția, iar fiecare produs este pregătit cu grijă și suflet.
+              Folosim doar ingrediente atent selecționate, inspirându-ne din
+              rețete clasice, dar adaptate gusturilor moderne. Fiecare etapă din
+              procesul nostru – de la alegerea aluatului perfect până la
+              ultimele detalii din prezentare – este gândită pentru a oferi
+              clienților un moment de bucurie. Credem în conexiuni reale, în
+              comunitate și în puterea lucrurilor bine făcute. Ne mândrim cu
+              ceea ce facem și ne dorim ca fiecare vizită să fie o experiență
+              care să îți aducă zâmbetul pe buze. Aceasta este povestea noastră.
+              Bine ai venit în lumea Sorridi – un loc unde gustul face
+              diferența.
+            </p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Piata Gemeni</h2>
-                </div>
-                <div class="card-wrapper">
-                  <div class="card-content pt-3">
-                    <img
-                      src="assets/img/map-pin.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p>Strada Vasile Lascăr 140</p>
-                  </div>
-                  <div class="card-content">
-                    <img
-                      src="assets/img/phone-call.svg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                    <p>+40 767 345 678</p>
-                  </div>
-                  <div class="card-content">
-                    <img src="assets/img/at-sign.svg" alt="" />
-                    <p>contact@sorridipizza1.com</p>
-                  </div>
-                  <div class="btn text-center mx-auto">
-                    <span class="btn-text">Get Directions</span>
-                    <span class="btn-arrow"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></span>
-                  </div>
-                </div>
-              </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="card-pict">
+            <h3 class="card-caption">Ingrediente de Calitate</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="card-pict-2">
+            <h3 class="card-caption">Rețete Autentice</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="card-pict-3">
+            <h3 class="card-caption">Satisfacția Clienților</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="card-pict-4">
+            <h3 class="card-caption">Oferte Speciale</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-headings pt-4">
+            <p>
+              Suntem mai mult decât o echipă – suntem o familie pasionată de
+              gusturi autentice și experiențe memorabile. Totul a început din
+              dorința de a aduce oamenilor un loc unde calitatea întâlnește
+              tradiția, iar fiecare produs este pregătit cu grijă și suflet.
+              Folosim doar ingrediente atent selecționate, inspirându-ne din
+              rețete clasice, dar adaptate gusturilor moderne. Fiecare etapă din
+              procesul nostru – de la alegerea aluatului perfect până la
+              ultimele detalii din prezentare – este gândită pentru a oferi
+              clienților un moment de bucurie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- chef section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="section-title text-center pt-5">
+            Echipa Noastră Talentată
+          </h1>
+          <p class="text-center card-thumb-heading">
+            Pasionați, creativi și dedicați – echipa noastră aduce <br />
+            gustul autentic în fiecare pizza.
+          </p>
+        </div>
+      </div>
+      <div class="row about-card-sec">
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div>
+            <a href="" class="card-thumb">
+              <img src="assets/img/about-img1.png" alt="" class="img-fluid" />
+            </a>
+            <div class="card-thumb-content">
+              <h5>Cameron Williamson</h5>
+              <p>Chief Executive - Sorridi Pizza</p>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 2</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div>
+            <a href="" class="card-thumb">
+              <img src="assets/img/about-img2.png" alt="" class="img-fluid" />
+            </a>
+            <div class="card-thumb-content">
+              <h5>Savannah Nguyenn</h5>
+              <p>Manager - Sorridi Pizza</p>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 3</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div>
+            <a href="" class="card-thumb">
+              <img src="assets/img/about-img3.png" alt="" class="img-fluid" />
+            </a>
+            <div class="card-thumb-content">
+              <h5>Guy Hawkins</h5>
+              <p>Senior Chef</p>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="card mt-4">
-                <div class="card-title text-center">
-                  <h2>Locatia 4</h2>
-                </div>
-                <div class="card-pic">
-                  <img
-                    src="assets/img/location-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div>
+            <a href="" class="card-thumb">
+              <img src="assets/img/about-img4.png" alt="" class="img-fluid" />
+            </a>
+            <div class="card-thumb-content">
+              <h5>Brooklyn Simmons</h5>
+              <p>Senior Chef</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer class="mt-5 footer-section">
       <div class="container text-center">

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/8a4f8a69d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <!-- Top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-top">
+      <div class="container">
+        <div class="call-section">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+40767345678">+40 767 345 678</a>
+          </a>
+        </div>
+        <span class="navbar-text">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </span>
+      </div>
+    </nav>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-main">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo-img" href="index.html">
+          <img src="assets/img/Logo.png" width="100" />
+        </a>
+
+        <!-- Mobile cart icon and toggle button -->
+        <div class="d-flex d-lg-none align-items-center ms-auto">
+          <a href="menu-cart.html" class="me-3"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <button class="navbar-toggler" type="button" id="openSidebar">
+            <i class="fa-solid fa-bars toggle-bars"></i>
+          </button>
+        </div>
+
+        <!-- Desktop navbar -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav active-nav">
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="index.html">Acasa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="about-us.html"
+                >Despre noi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navbar-links-sec" href="menus.html"
+                >Meniu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="location.html"
+                >Locatie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="catering.html"
+                >Catering</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="track-order.html"
+                >urmărirea comenzii</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-links-sec" href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="create-account.html"
+                ><button class="btn form-btns reg-btn">Register</button></a
+              >
+            </li>
+            <li class="nav-item btn-section">
+              <a href="authentication.html"
+                ><button class="btn form-btns log-btn">Login</button></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop cart & buttons -->
+        <div class="d-none d-lg-flex align-items-center">
+          <a href="menu-cart.html" class="me-3"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="create-account.html"
+            ><button class="btn form-btns reg-btn" type="button">
+              Register
+            </button></a
+          >
+          <a href="authentication.html"
+            ><button class="btn form-btns" type="button">Login</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div>
+        <div class="sidebar-header">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <ul class="sidebar-menu">
+          <a href="index.html"
+            ><li><i class="fas fa-home"></i> Acasa</li></a
+          >
+          <a href="about-us.html"
+            ><li><i class="fas fa-info-circle"></i> Despre noi</li></a
+          >
+          <a href="menus.html"
+            ><li class="active"><i class="fas fa-utensils"></i> Meniu</li></a
+          >
+          <a href="location.html"
+            ><li><i class="fas fa-map-marker-alt"></i> Locatie</li></a
+          >
+          <a href="catering.html"
+            ><li><i class="fas fa-glass-cheers"></i> Catering</li></a
+          >
+          <a href="track-order.html"
+            ><li><i class="fas fa-truck"></i> urmărirea comenzii</li></a
+          >
+
+          <a href="contact.html"
+            ><li><i class="fas fa-phone-alt"></i> Contact</li></a
+          >
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <a href="authentication.html"
+          ><button class="btn login-red-btn">Login</button></a
+        >
+        <a href="create-account.html"
+          ><button class="btn reg-green-btn">Register</button></a
+        >
+      </div>
+    </div>
+    <!-- BACKGROUND -->
+    <div class="container-fluid p-0">
+      <div class="pizza-green">
+        <h1>Meniu</h1>
+        <div class="mobile-txt">
+          <h1>Pizza Milano</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZA TOPPING SELECTOR -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="border-green">
+            <div class="row">
+              <div class="col-lg-5 col-md-12">
+                <img src="assets/img/pizza-topping.png" alt="" />
+              </div>
+              <div class="col-lg-7 col-md-12">
+                <div class="scroll-section">
+                  <h3>Pizza Milano</h3>
+                  <!-- TOPPING SELECT -->
+                  <details class="dropdown top-dropdown" open>
+                    <summary>
+                      Topping
+                      <i class="fa-solid fa-angle-down"></i>
+                    </summary>
+                    <div class="checkbox-list">
+                      <div class="checkbox-item top-add">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Prosciutto cotto
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" checked /> Extra Prosciutto
+                          crudo
+                        </label>
+                        <span class="price">5.40 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Salam Picant
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Rucola
+                        </label>
+                        <span class="price">5.40 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Crema de trufe
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Măsline
+                        </label>
+                        <span class="price">5.40 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Ciuperci
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Taleggio
+                        </label>
+                        <span class="price">5.40 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" /> Extra Gorgonzola
+                        </label>
+                        <span class="price">8.00 Lei</span>
+                      </div>
+                    </div>
+                  </details>
+
+                  <!-- SAUCE DETAILS -->
+                  <details class="sauce-check" open>
+                    <summary>
+                      Sosuri
+                      <i class="fa-solid fa-angle-down"></i>
+                    </summary>
+                    <div class="checkbox-list">
+                      <div class="checkbox-item top-add">
+                        <label class="checkbox-label">
+                          <input type="checkbox" checked />Sos dulce
+                        </label>
+                      </div>
+                      <div class="checkbox-item">
+                        <label class="checkbox-label">
+                          <input type="checkbox" />Sos Picant
+                        </label>
+                      </div>
+                    </div>
+                  </details>
+                  <!-- FINALIZE -->
+                  <div class="row space">
+                    <div class="col-md-4">
+                      <div class="inc-dec">
+                        <button class="btn counter" onclick="decrease()">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <span class="value" id="count">02</span>
+                        <button class="btn counter" onclick="increase()">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <a href="menu-cart.html">
+                        <div class="final-order">
+                          <span>80.00 Lei</span>
+                          <h6>
+                            Finalizare comandă &nbsp;<i
+                              class="fa-solid fa-arrow-right"
+                            ></i>
+                          </h6></div
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="options">
+            <h1>Alege și Bucură-te</h1>
+            <p>
+              Reduceri exclusive la produsele tale preferate, <br />disponibile
+              doar astăzi!
+            </p>
+          </div>
+          <div class="row pizza-bottom">
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">BUFALINA S.T.G. (450g)</h5>
+                  <p class="card-text">
+                    Blat napoletan , sos de roșii , mozzarella di bufala , d.o.p
+                    , parmigiano , busuioc
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="menu-cart.html" class="btn pizza-btn"
+                    >Cumpără acum!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">BUFALINA S.T.G. (450g)</h5>
+                  <p class="card-text">
+                    Blat napoletan , sos de roșii , mozzarella di bufala , d.o.p
+                    , parmigiano , busuioc
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="menu-cart.html" class="btn pizza-btn"
+                    >Cumpără acum!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">BUFALINA S.T.G. (450g)</h5>
+                  <p class="card-text">
+                    Blat napoletan , sos de roșii , mozzarella di bufala , d.o.p
+                    , parmigiano , busuioc
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="menu-cart.html" class="btn pizza-btn"
+                    >Cumpără acum!
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card pizza-card" style="width: 100%">
+                <img
+                  src="assets/img/pizza-card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-0">
+                  <h5 class="card-title">BUFALINA S.T.G. (450g)</h5>
+                  <p class="card-text">
+                    Blat napoletan , sos de roșii , mozzarella di bufala , d.o.p
+                    , parmigiano , busuioc
+                  </p>
+                  <span>42.00 Lei</span>
+                  <a href="menu-cart.html" class="btn pizza-btn"
+                    >Cumpără acum!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PIZZA TOPPING SELECTOR -->
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container text-center">
+        <p>© 2025 Sorridi Pizza. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      // navbar sidebar js
+      const sidebar = document.getElementById("mobileSidebar");
+      const overlay = document.getElementById("sidebarOverlay");
+      const toggleBtn = document.getElementById("openSidebar");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        overlay.style.display = "block";
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.style.display = "none";
+      });
+    </script>
+    <script>
+      let count = 2;
+      function updateDisplay() {
+        document.getElementById("count").textContent = count
+          .toString()
+          .padStart(2, "0");
+      }
+
+      function increase() {
+        count++;
+        updateDisplay();
+      }
+
+      function decrease() {
+        if (count > 0) {
+          count--;
+          updateDisplay();
+        }
+      }
+
+      // Initialize display
+      updateDisplay();
+    </script>
+  </body>
+</html>
