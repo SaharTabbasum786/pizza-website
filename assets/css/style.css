@@ -1178,8 +1178,9 @@ summary i {
   font-style: normal;
   font-weight: 900;
   line-height: 40px; /* 142.857% */
-  margin-top: 60px;
-  margin-bottom: 12px;
+}
+.top-headings {
+  padding-top: 60px;
 }
 .title-text {
   color: #060808;
@@ -2724,7 +2725,7 @@ summary i {
     margin-right: auto;
     width: 100%;
     height: 100px;
-    object-fit: none;
+    object-fit: contain;
   }
   .tab-container {
     flex-direction: column;
@@ -2857,7 +2858,11 @@ summary i {
     gap: 15px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1399px) {
+  .navbar-main ul li a {
+    padding: 0px 20px 0px 0px !important;
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .curve-bg-img {
@@ -2946,6 +2951,9 @@ summary i {
   }
 }
 @media (max-width: 600px) {
+  .top-headings {
+    padding-top: 28px;
+  }
   .order-contact h1 {
     font-size: 20px;
     margin-top: 28px;
