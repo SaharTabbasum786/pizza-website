@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <a class="dashboard.html">
+          <img src="assets/img/logo.png" />
+        </a>
+        <span class="logo_name">Sorridi Pizza</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-grip"></i>
+            <span class="link_name">Tabloul de bord</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="comenzilor.html">
+              <i class="fas fa-file-alt"></i>
+              <span class="link_name">Gestionarea comenzilor</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="messages-pic-table.html">
+              <i class="fas fa-utensils"></i>
+              <span class="link_name">Gestionarea meniului</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="catering.html">
+            <i class="fas fa-hamburger"></i>
+            <span class="link_name">Catering</span>
+          </a>
+        </li>
+        <li>
+          <a href="clients.html">
+            <i class="fas fa-user"></i>
+            <span class="link_name">Gestionarea clienților</span>
+          </a>
+        </li>
+        <li>
+          <a href="messages.html">
+            <i class="fas fa-envelope"></i>
+            <span class="link_name">Mesaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotions.html">
+            <i class="fas fa-award"></i>
+            <span class="link_name">Promoții/Reduceri</span>
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <i class="fas fa-bell"></i>
+            <span class="link_name">Notificări</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="setari.html">
+            <i class="fas fa-cog"></i>
+            <span class="link_name">Setări</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="link_name">Deconectare</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="nav-dash-logo">
+                <a href="dashboard.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </i>
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="col-md-4 prof-sec" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <a href="notifications.html"
+                  ><i class="fa-regular fa-bell"></i
+                ></a>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>
+                    Sebastian &nbsp;<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 9L12 15L6 9"
+                        stroke="#060808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="same-bg">
+                <div class="page-move">
+                  <nav
+                    style="--bs-breadcrumb-divider: '>'"
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item style-change">
+                        <a href="#">Tabloul de bord</a>
+                      </li>
+                      <li
+                        class="breadcrumb-item style-change"
+                        aria-current="page"
+                      >
+                        Setări
+                      </li>
+                      <li
+                        class="style-change breadcrumb-item active"
+                        aria-current="page"
+                      >
+                        Termeni și Condiții
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+                <h1>Termeni și Condiții</h1>
+                <div class="form-bg">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label for="Termsandconditions" class="form-label senders"
+                        >Termeni și Condiții</label
+                      >
+                      <input
+                        type="Terms and conditions"
+                        id="Terms and Condition"
+                        class="form-control all-terms"
+                        placeholder="Termeni și Condiții"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="same-bg same-bg-sec">
+                <div class="form-bg all-bottom">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="all-btns">
+                        <a href="#"
+                          ><button class="btn delivered-butn" type="button">
+                            Update
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of main row inside col-md-10 -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

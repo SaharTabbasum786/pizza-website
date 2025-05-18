@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <a class="dashboard.html">
+          <img src="assets/img/logo.png" />
+        </a>
+        <span class="logo_name">Sorridi Pizza</span>
+      </div>
+      <ul class="nav-links">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="fas fa-grip"></i>
+            <span class="link_name">Tabloul de bord</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="comenzilor.html">
+              <i class="fas fa-file-alt"></i>
+              <span class="link_name">Gestionarea comenzilor</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="messages-pic-table.html">
+              <i class="fas fa-utensils"></i>
+              <span class="link_name">Gestionarea meniului</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="catering.html">
+            <i class="fas fa-hamburger"></i>
+            <span class="link_name">Catering</span>
+          </a>
+        </li>
+        <li>
+          <a href="clients.html">
+            <i class="fas fa-user"></i>
+            <span class="link_name">Gestionarea clienților</span>
+          </a>
+        </li>
+        <li>
+          <a href="messages.html">
+            <i class="fas fa-envelope"></i>
+            <span class="link_name">Mesaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotions.html">
+            <i class="fas fa-award"></i>
+            <span class="link_name">Promoții/Reduceri</span>
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <i class="fas fa-bell"></i>
+            <span class="link_name">Notificări</span>
+          </a>
+        </li>
+        <li>
+          <a href="setari.html">
+            <i class="fas fa-cog"></i>
+            <span class="link_name">Setări</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="link_name">Deconectare</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="nav-dash-logo">
+                <a href="dashboard.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </i>
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="col-md-4 prof-sec" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <a href="notifications.html"
+                  ><i class="fa-regular fa-bell"></i
+                ></a>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>
+                    Sebastian &nbsp;<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 9L12 15L6 9"
+                        stroke="#060808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-bar-pg">
+              <nav aria-label="breadcrumb breadcrumb-sec">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Tabloul de bord
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Gestionarea comenzilor</a>
+                  </li>
+                </ol>
+              </nav>
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <div class="comenzi-card">
+                    <div class="order-comenzi">
+                      <p>Toate comenzile</p>
+                      <img
+                        src="assets/img/Delivered.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="sorridi-hdn">
+                      <h1>32.450</h1>
+                    </div>
+                    <div class="comenzi-percent">
+                      <span>10%</span>
+                      <img
+                        src="assets/img/Frame 11.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <span>față de luna trecută</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <div class="comenzi-card">
+                    <div class="order-comenzi">
+                      <p>Comenzi livrate</p>
+                      <img
+                        src="assets/img/Delivered.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="sorridi-hdn">
+                      <h1>32.450</h1>
+                    </div>
+                    <div class="rate-percent">
+                      <span>10%</span>
+                      <img
+                        src="assets/img/Frame 11 (1).svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <span>față de luna trecută</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <div class="comenzi-card">
+                    <div class="order-comenzi">
+                      <p>Comenzi în așteptare</p>
+                      <img
+                        src="assets/img/Delivered.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="sorridi-hdn">
+                      <h1>27.890</h1>
+                    </div>
+                    <div class="comenzi-percent">
+                      <span>10%</span>
+                      <img
+                        src="assets/img/Frame 11.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <span>față de luna trecută</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <div class="comenzi-card">
+                    <div class="order-comenzi">
+                      <p>Comenzi anulate</p>
+                      <img
+                        src="assets/img/Delivered.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="sorridi-hdn">
+                      <h1>32.450</h1>
+                    </div>
+                    <div class="rate-percent">
+                      <span>10%</span>
+                      <img
+                        src="assets/img/Frame 11 (1).svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <span>față de luna trecută</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <h2 class="label-title">Analitică</h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="select-sec">
+                    <select name="" id="">
+                      <option value="">Orders</option>
+                      <option value="">Delivered</option>
+                      <option value="">Pending</option>
+                      <option value="">Cancelled</option>
+                      <option value="">On Way</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="">Today</option>
+                      <option value="">Yesterday</option>
+                      <option value="">This week</option>
+                      <option value="">This month</option>
+                      <option value="">This year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div class="graph-sec">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <h2 class="label-title">Activitate Recente</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>New Order Created</h3>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama order one milano pizza right now
+                          <span> Order ID# 2871878. </span> His Delivery Address
+                          is Lahore Road Sheikhupura, Punjab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Order Shipped</h3>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          The order for Usama has been shipped. It's currently
+                          on the way to Lahore Road Sheikhupura, Punjab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Order Delivered</h3>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama's one milano pizza has been successfully
+                          delivered to Lahore Road Sheikhupura, Punjab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- sidebar js -->
+    <script>
+      // Sidebar script
+      document.addEventListener("DOMContentLoaded", function () {
+        let arrow = document.querySelectorAll(".arrow");
+        for (let i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", function (e) {
+            let arrowParent = e.target.parentElement.parentElement; // Selecting main parent of arrow
+            arrowParent.classList.toggle("showMenu");
+          });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+
+        sidebarBtn.addEventListener("click", function () {
+          sidebar.classList.toggle("close");
+        });
+
+        // Function to toggle sidebar based on screen size
+        function toggleSidebar() {
+          let screenWidth = window.innerWidth;
+          if (screenWidth < 992) {
+            sidebar.classList.add("close");
+          } else {
+            sidebar.classList.remove("close");
+          }
+        }
+
+        // Call the function initially
+        toggleSidebar();
+
+        // Listen for resize events to adjust sidebar
+        window.addEventListener("resize", function () {
+          toggleSidebar();
+        });
+      });
+    </script>
+    <!-- Grapgh js -->
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      const chart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "1 APR",
+            "2 APR",
+            "3 APR",
+            "4 APR",
+            "5 APR",
+            "6 APR",
+            "7 APR",
+            "8 APR",
+            "9 APR",
+            "10 APR",
+            "11 APR",
+            "12 APR",
+            "13 APR",
+            "14 APR",
+            "15 APR",
+            "16 APR",
+            "17 APR",
+          ],
+          datasets: [
+            {
+              label: "",
+              data: [
+                100, 4800, 300, 3700, 100, 500, 300, 4900, 1200, 3800, 100, 500,
+                1100, 3800, 700, 300, 3000,
+              ],
+              borderColor: "limegreen",
+              borderWidth: 2,
+              fill: false,
+              tension: 0.4, // smooth curve
+              pointRadius: 0, // hide points
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              min: 0,
+              max: 10000,
+              ticks: {
+                stepSize: 1000,
+                callback: function (value) {
+                  return value.toLocaleString();
+                },
+              },
+              grid: {
+                color: "#eee",
+              },
+            },
+            x: {
+              grid: {
+                color: "#eee",
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              mode: "index",
+              intersect: false,
+            },
+          },
+        },
+      });
+    </script>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

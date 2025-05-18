@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <a class="dashboard.html">
+          <img src="assets/img/logo.png" />
+        </a>
+        <span class="logo_name">Sorridi Pizza</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-grip"></i>
+            <span class="link_name">Tabloul de bord</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="comenzilor.html">
+              <i class="fas fa-file-alt"></i>
+              <span class="link_name">Gestionarea comenzilor</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="messages-pic-table.html">
+              <i class="fas fa-utensils"></i>
+              <span class="link_name">Gestionarea meniului</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="catering.html">
+            <i class="fas fa-hamburger"></i>
+            <span class="link_name">Catering</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="clients.html">
+            <i class="fas fa-user"></i>
+            <span class="link_name">Gestionarea clienților</span>
+          </a>
+        </li>
+        <li>
+          <a href="messages.html">
+            <i class="fas fa-envelope"></i>
+            <span class="link_name">Mesaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotions.html">
+            <i class="fas fa-award"></i>
+            <span class="link_name">Promoții/Reduceri</span>
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <i class="fas fa-bell"></i>
+            <span class="link_name">Notificări</span>
+          </a>
+        </li>
+        <li>
+          <a href="setari.html">
+            <i class="fas fa-cog"></i>
+            <span class="link_name">Setări</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="link_name">Deconectare</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="nav-dash-logo">
+                <a href="dashboard.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </i>
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="col-md-4 prof-sec" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <a href="notifications.html"
+                  ><i class="fa-regular fa-bell"></i
+                ></a>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>
+                    Sebastian &nbsp;<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 9L12 15L6 9"
+                        stroke="#060808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-bar-pg">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Tabloul de bord
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-page-link"
+                      >Gestionarea clienților</a
+                    >
+                  </li>
+                </ol>
+              </nav>
+
+              <div class="row mt-3">
+                <div class="col-lg-6 col-md-4">
+                  <h2 class="label-title">Toți utilizatorii</h2>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                  <div class="search-wrapper">
+                    <div class="search-wrap-img">
+                      <img
+                        src="assets/img/sliders.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="search-btn">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="plholder"
+                        placeholder="Search order ID"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="table-responsive table-sec client-table">
+                    <table class="table table-bordered align-middle text-start">
+                      <thead class="align-middle text-start">
+                        <tr>
+                          <th>User ID</th>
+                          <th>Username</th>
+                          <th>Email Address</th>
+                          <th>Phone Number</th>
+                          <th>Date of Birth</th>
+                          <th>Delivery Address</th>
+                          <th>Joining Date</th>
+                          <th>Orders Count</th>
+                          <th>Status</th>
+                          <th class="justify-content-center text-center">
+                            Action
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="ordr-id">#5789708890</td>
+                          <td class="ordr-id">Marvin McKinney</td>
+                          <td class="ordr-id">sophie.martin@newmail.com</td>
+                          <td class="ordr-id">(555) 123-4567</td>
+                          <td class="ordr-id">7/11/19</td>
+                          <td class="ordr-id">
+                            123 Maple Street, Springfield, IL 62701
+                          </td>
+                          <td class="ordr-id">7/11/19</td>
+                          <td class="ordr-id">3 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708891</td>
+                          <td class="ordr-id">Annette Black</td>
+                          <td class="ordr-id">oliver.brown@freshmail.com</td>
+                          <td class="ordr-id">(555) 234-5678</td>
+                          <td class="ordr-id">10/28/12</td>
+                          <td class="ordr-id">
+                            456 Oak Avenue, Rivertown, TX 75001
+                          </td>
+                          <td class="ordr-id">10/28/12</td>
+                          <td class="ordr-id">7 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708892</td>
+                          <td class="ordr-id">Esther Howard</td>
+                          <td class="ordr-id">lily.james@uniqueaddress.com</td>
+                          <td class="ordr-id">(555) 345-6789</td>
+                          <td class="ordr-id">6/21/19</td>
+                          <td class="ordr-id">
+                            789 Pine Road, Lakeview, CA 90210
+                          </td>
+                          <td class="ordr-id">6/21/19</td>
+                          <td class="ordr-id">NA</td>
+                          <td>
+                            <button class="status-btn cancelled">Banned</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Unbaned</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708893</td>
+                          <td class="ordr-id">Leslie Alexander</td>
+                          <td class="ordr-id">ethan.smith@custommail.com</td>
+                          <td class="ordr-id">(555) 456-7890</td>
+                          <td class="ordr-id">10/6/13</td>
+                          <td class="ordr-id">
+                            321 Birch Lane, Hilltop, NY 10001
+                          </td>
+                          <td class="ordr-id">10/6/13</td>
+                          <td class="ordr-id">12 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708895</td>
+                          <td class="ordr-id">Cody Fisher</td>
+                          <td class="ordr-id">ava.johnson@personal.com</td>
+                          <td class="ordr-id">(555) 567-8901</td>
+                          <td class="ordr-id">12/10/13</td>
+                          <td class="ordr-id">
+                            654 Cedar Drive, Valleytown, FL 33101
+                          </td>
+                          <td class="ordr-id">12/10/13</td>
+                          <td class="ordr-id">8 Orders</td>
+                          <td>
+                            <button class="status-btn cancelled">Banned</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Unban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708894</td>
+                          <td class="ordr-id">Darrell Steward</td>
+                          <td class="ordr-id">noah.williams@mail.com6</td>
+                          <td class="ordr-id">(555) 678-9012</td>
+                          <td class="ordr-id">8/21/15</td>
+                          <td class="ordr-id">
+                            987 Elm Street, Forest City, WA 98001
+                          </td>
+                          <td class="ordr-id">8/21/15</td>
+                          <td class="ordr-id">2 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708896</td>
+                          <td class="ordr-id">Brooklyn Simmons</td>
+                          <td class="ordr-id">mia.jones@distinctmail.com</td>
+                          <td class="ordr-id">(555) 789-0123</td>
+                          <td class="ordr-id">8/16/13</td>
+                          <td class="ordr-id">
+                            135 Spruce Way, Oceanview, OR 97401
+                          </td>
+                          <td class="ordr-id">8/16/13</td>
+                          <td class="ordr-id">NA</td>
+                          <td>
+                            <button class="status-btn cancelled">Banned</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Unban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">##5789708890</td>
+                          <td class="ordr-id">Albert Flores</td>
+                          <td class="ordr-id">liam.brown@newaddress.com</td>
+                          <td class="ordr-id">(555) 890-1234</td>
+                          <td class="ordr-id">9/4/12</td>
+                          <td class="ordr-id">
+                            246 Fir Boulevard, Mountainview, CO 80201
+                          </td>
+                          <td class="ordr-id">9/4/12</td>
+                          <td class="ordr-id">4 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708895</td>
+                          <td class="ordr-id">Ronald Richards</td>
+                          <td class="ordr-id">isabella.davis@variedmail.com</td>
+                          <td class="ordr-id">(555) 901-2345</td>
+                          <td class="ordr-id">5/19/12</td>
+                          <td class="ordr-id">
+                            357 Willow Court, Desert Springs, AZ 85001
+                          </td>
+                          <td class="ordr-id">5/19/12</td>
+                          <td class="ordr-id">NA</td>
+                          <td>
+                            <button class="status-btn cancelled">Banned</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Unban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ordr-id">#5789708897</td>
+                          <td class="ordr-id">Eleanor Pena</td>
+                          <td class="ordr-id">jacob.miller@mail.com</td>
+                          <td class="ordr-id">(555) 012-3456</td>
+                          <td class="ordr-id">3/4/16</td>
+                          <td class="ordr-id">
+                            468 Chestnut Place, Riverbend, NV 89501
+                          </td>
+                          <td class="ordr-id">3/4/16</td>
+                          <td class="ordr-id">6 Orders</td>
+                          <td>
+                            <button class="status-btn delivered">Active</button>
+                          </td>
+                          <td
+                            class="msg-table-dark justify-content-center text-center action-cell"
+                          >
+                            <div class="dropdown">
+                              <a
+                                href="#"
+                                class="dot-butn"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  class="bi bi-three-dots"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+                                  />
+                                </svg>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#">Ban</a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#">Delete</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Pagination Markup -->
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous"
+                          >&lt;</a
+                        >
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">&gt;</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

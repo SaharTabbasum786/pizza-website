@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <a class="dashboard.html">
+          <img src="assets/img/logo.png" />
+        </a>
+        <span class="logo_name">Sorridi Pizza</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-grip"></i>
+            <span class="link_name">Tabloul de bord</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="comenzilor.html">
+              <i class="fas fa-file-alt"></i>
+              <span class="link_name">Gestionarea comenzilor</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="messages-pic-table.html">
+              <i class="fas fa-utensils"></i>
+              <span class="link_name">Gestionarea meniului</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="catering.html">
+            <i class="fas fa-hamburger"></i>
+            <span class="link_name">Catering</span>
+          </a>
+        </li>
+        <li>
+          <a href="clients.html">
+            <i class="fas fa-user"></i>
+            <span class="link_name">Gestionarea clienților</span>
+          </a>
+        </li>
+        <li>
+          <a href="messages.html">
+            <i class="fas fa-envelope"></i>
+            <span class="link_name">Mesaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotions.html">
+            <i class="fas fa-award"></i>
+            <span class="link_name">Promoții/Reduceri</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="notifications.html">
+            <i class="fas fa-bell"></i>
+            <span class="link_name">Notificări</span>
+          </a>
+        </li>
+        <li>
+          <a href="setari.html">
+            <i class="fas fa-cog"></i>
+            <span class="link_name">Setări</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="link_name">Deconectare</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="nav-dash-logo">
+                <a href="dashboard.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </i>
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="col-md-4 prof-sec" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <a href="notifications.html"
+                  ><i class="fa-regular fa-bell"></i
+                ></a>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>
+                    Sebastian &nbsp;<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 9L12 15L6 9"
+                        stroke="#060808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-bar-pg">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Tabloul de bord
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-page-link">Setări</a>
+                  </li>
+                </ol>
+              </nav>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <h2 class="label-title">Notificări</h2>
+                </div>
+                <div class="col-6"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>New Account Registered</h3>
+                        <p>Mar 15, 2024</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama just created a new account.
+                          <span> Email: usama@example.com. </span> Welcome to
+                          the platform!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>New Order Created</h3>
+                        <p>Jul 22, 2023</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama ordered one Milano Pizza.
+                          <span> Order ID# 2871878. </span> Delivery Address:
+                          Lahore Road, Sheikhupura, Punjab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Order Dispatched</h3>
+                        <p>Nov 30, 20264</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          <span>Order ID# 2871878</span> for Usama has been
+                          dispatched. Expected delivery in 30 minutes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Order Delivered</h3>
+                        <p>Aug 14, 2029</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama’s order <span> (ID# 2871878) </span> has been
+                          successfully delivered at Lahore Road, Sheikhupura.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Payment Received</h3>
+                        <p>Apr 30, 2028</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Payment for <span> Order ID# 2871878 </span> Welcome
+                          to the platform!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Order Cancelled</h3>
+                        <p>Dec 25, 2024</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          <span>Order ID# 2871878 </span>placed by Usama has
+                          been cancelled. Reason: User Request.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Profile Updated</h3>
+                        <p>Oct 1, 2023</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama just updated his profile details. Email,
+                          address, or contact information may have changed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Password Changed</h3>
+                        <p>Feb 18, 2025</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama successfully changed the password for his
+                          account. If this wasn’t you, please contact support.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>New Order Created</h3>
+                        <p>Sep 10, 2022</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Usama ordered one Milano Pizza.
+                          <span> Order ID# 2871878. </span>Delivery Address:
+                          Lahore Road, Sheikhupura, Punjab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="notifi-wrap">
+                    <div class="notifi-card">
+                      <div class="notifi-card-content">
+                        <h3>Payment Received</h3>
+                        <p>Jan 5, 2027</p>
+                      </div>
+                      <div class="notifi-title">
+                        <p>
+                          Payment for <span> Order ID# 2871878 </span> by Usama
+                          has been processed successfully via Credit Card.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Pagination Markup -->
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">&lt;</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">&gt;</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

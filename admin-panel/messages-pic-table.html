@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/55bd3bbc70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <title>Sorridi Pizza</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <a class="dashboard.html">
+          <img src="assets/img/logo.png" />
+        </a>
+        <span class="logo_name">Sorridi Pizza</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-grip"></i>
+            <span class="link_name">Tabloul de bord</span>
+          </a>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="comenzilor.html">
+              <i class="fas fa-file-alt"></i>
+              <span class="link_name">Gestionarea comenzilor</span>
+            </a>
+          </div>
+        </li>
+        <li class="active">
+          <div class="iocn-link">
+            <a href="messages-pic-table.html">
+              <i class="fas fa-utensils"></i>
+              <span class="link_name">Gestionarea meniului</span>
+            </a>
+          </div>
+        </li>
+        <!-- <li> -->
+        <li>
+          <a href="catering.html">
+            <i class="fas fa-hamburger"></i>
+            <span class="link_name">Catering</span>
+          </a>
+        </li>
+        <li>
+          <a href="clients.html">
+            <i class="fas fa-user"></i>
+            <span class="link_name">Gestionarea clienților</span>
+          </a>
+        </li>
+        <li>
+          <a href="messages.html">
+            <i class="fas fa-envelope"></i>
+            <span class="link_name">Mesaje</span>
+          </a>
+        </li>
+        <li>
+          <a href="promotions.html">
+            <i class="fas fa-award"></i>
+            <span class="link_name">Promoții/Reduceri</span>
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html">
+            <i class="fas fa-bell"></i>
+            <span class="link_name">Notificări</span>
+          </a>
+        </li>
+        <li>
+          <a href="setari.html">
+            <i class="fas fa-cog"></i>
+            <span class="link_name">Setări</span>
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-links">
+        <ul class="nav-links">
+          <li data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="link_name">Deconectare</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="home-content fixed-top">
+            <div class="col-md-8" style="padding: 0px 12px; display: flex">
+              <i class="nav-dash-logo">
+                <a href="dashboard.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </i>
+              <i class="bx bx-menu"></i>
+            </div>
+            <div class="col-md-4 prof-sec" style="padding: 0px 12px">
+              <div class="nav-profile">
+                <a href="notifications.html"
+                  ><i class="fa-regular fa-bell"></i
+                ></a>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/profile-img.png" alt="" />
+                  <h1>
+                    Sebastian &nbsp;<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 9L12 15L6 9"
+                        stroke="#060808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============================== MAIN CONTENT START HERE =========================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="search-bar-pg">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Tabloul de bord
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-page-link">Mesaje</a>
+                  </li>
+                </ol>
+              </nav>
+
+              <div class="row mt-3">
+                <div class="col-lg-6 col-md-4">
+                  <h2 class="label-title">Mesaje</h2>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                  <div class="search-wrapper">
+                    <div class="search-wrap-img">
+                      <img
+                        src="assets/img/sliders.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="search-btn position-relative">
+                      <input
+                        type="text"
+                        class="form-control pe-5"
+                        id="plholder"
+                        placeholder="Search order ID"
+                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                        />
+                      </svg>
+                    </div>
+                    <div class="add-butn">
+                      <a href="add-product.html">
+                        <button type="button" class="add-cart-butn">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-plus-lg"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                            />
+                          </svg>
+                          Adaugă Catering Nou
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="table-responsive table-sec pic-table">
+                    <table class="table table-bordered align-middle text-start">
+                      <thead class="align-middle text-start">
+                        <tr>
+                          <th>Product Image</th>
+                          <th>Item ID</th>
+                          <th>Product Title</th>
+                          <th>Ingredients</th>
+                          <th>Product Type</th>
+                          <th>Price</th>
+                          <th>Availability</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image (7).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708890</td>
+                          <td class="ordr-id">Milano Pizza</td>
+                          <td class="ordr-id">
+                            Mozzarella fior di latte 40 gr,mozzarella di bufala
+                            35 gr, sos rosii 60 gr , grana <br />
+                            padano 15 gr, salam picant 50 gr, busuioc 4 gr, ulei
+                            extra virgin 5 ml
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Pizza
+                          </td>
+                          <td class="ordr-id">5.80 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 38.png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708891</td>
+                          <td class="ordr-id">ChillFizz Soda</td>
+                          <td class="ordr-id">
+                            45 gr de mozzarella fior di latte, 50 gr de roșii
+                            cherry, 40 gr de <br />
+                            prosciutto crudo, 10 gr de rucola și 5 ml de ulei de
+                            măsline.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Cold Drink
+                          </td>
+                          <td class="ordr-id">6.50 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn cancelled">
+                              Unpublish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 33 (1).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708892</td>
+                          <td class="ordr-id">Mint Chocolate Chip Delight</td>
+                          <td class="ordr-id">
+                            Ciocolată neagră 70 gr, lapte condensat 100 ml,
+                            mentă proaspătă 10 gr, <br />
+                            fulgi de ciocolată 30 gr, extract de vanilie 5 ml
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Ice Cream
+                          </td>
+                          <td class="ordr-id">4.90 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 23 (1).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708893</td>
+                          <td class="ordr-id">Fettuccine Primavera</td>
+                          <td class="ordr-id">
+                            Fettuccine Primavera include: 40 gr de brânză
+                            mozzarella proaspătă, 30 gr de <br />
+                            ciuperci aromate, 50 gr de șuncă delicioasă, 20 gr
+                            de măsline verzi, și 20 gr de ardei gras colorat.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Pasta
+                          </td>
+                          <td class="ordr-id">7.20 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image (8).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708895</td>
+                          <td class="ordr-id">Mediterranean Delight Salad</td>
+                          <td class="ordr-id">
+                            Mozzarella fior di latte 40 gr, ciuperci 30 gr,
+                            șuncă 50 gr, măsline negre 20 gr, <br />
+                            anghinare 20 gr, roșii cherry 30 gr, ardei gras 20
+                            gr, busuioc proaspăt 10 gr.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Salate
+                          </td>
+                          <td class="ordr-id">7.00 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn cancelled">
+                              Unpublish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 23 (1).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708894</td>
+                          <td class="ordr-id">Spicy Italian Delight Panini</td>
+                          <td class="ordr-id">
+                            Mozzarella de bivoliță 45 gr, salam picant 60 gr,
+                            ardei iute 5 gr, sos de roșii 50 gr, <br />
+                            toate acestea se combină perfect pentru a crea un
+                            panini italian picant delicios.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Panini
+                          </td>
+                          <td class="ordr-id">6.80 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 33 (1).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708896</td>
+                          <td class="ordr-id">Chocolate Lava Cake</td>
+                          <td class="ordr-id">
+                            Făină 100 gr, ciocolată neagră 150 gr, unt 100 gr,
+                            zahăr 80 gr, ouă 2 buc, <br />
+                            vanilie 1 linguriță, sare un vârf de cuțit.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Dessert
+                          </td>
+                          <td class="ordr-id">5.50 Leio</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn cancelled">
+                              Unpublish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image (7).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708890</td>
+                          <td class="ordr-id">Milano Pizza</td>
+                          <td class="ordr-id">
+                            Mozzarella fior di latte 40 gr,mozzarella di bufala
+                            35 gr, sos rosii 60 gr , <br />
+                            grana padano 15 gr, salam picant 50 gr, busuioc 4
+                            gr, ulei extra virgin 5 ml
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Pizza
+                          </td>
+                          <td class="ordr-id">5.80 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image (8).png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708895</td>
+                          <td class="ordr-id">Mediterranean Delight Salad</td>
+                          <td class="ordr-id">
+                            Mozzarella fior di latte 40 gr, ciuperci 30 gr,
+                            șuncă 50 gr, măsline negre 20 gr , <br />
+                            anghinare 20 gr, roșii cherry 30 gr, ardei gras 20
+                            gr, busuioc proaspăt 10 gr.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Salate
+                          </td>
+                          <td class="ordr-id">7.00 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn cancelled">
+                              Unpublish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="justify-content-center text-center">
+                            <img src="assets/img/image 25.png" alt="" />
+                          </td>
+                          <td class="ordr-id">#5789708897</td>
+                          <td class="ordr-id">Mushroom Delight</td>
+                          <td class="ordr-id">
+                            40 gr de mozzarella de bivoliță, 50 gr de ciuperci
+                            proaspete, 60 gr de sos de roșii aromat, <br />
+                            5 ml de ulei de măsline extra virgin.
+                          </td>
+                          <td
+                            class="ordr-id justify-content-center text-center"
+                          >
+                            Bauturi
+                          </td>
+                          <td class="ordr-id">5.90 Lei</td>
+                          <td class="justify-content-center text-center">
+                            <button class="status-btn delivered">
+                              Publish
+                            </button>
+                          </td>
+                          <td class="justify-content-center text-center">
+                            <a href="#" class="edit-butn"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-pencil-square"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"
+                                /></svg
+                            ></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Pagination Markup -->
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous"
+                          >&lt;</a
+                        >
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">&gt;</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Bundle JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- logout modal -->
+    <div
+      class="modal fade"
+      id="logoutmodal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content msg-content-sec">
+          <div class="modal-body p-0">
+            <h2>Are you sure you want to logout?</h2>
+            <div class="row">
+              <div class="col-md-12 logout-btns-sec">
+                <div class="modal-btns-sec">
+                  <button
+                    class="btn reply-btn"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    No, Cancel
+                  </button>
+                  <button class="btn read-btn">Yes, Sure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
